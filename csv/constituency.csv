@@ -1,0 +1,515 @@
+constituency_id,state_name,state_abbreviation,district
+1,Alaska,AK,0
+2,Alaska,AK,STATE
+3,Alabama,AL,4
+4,Alabama,AL,3
+5,Alabama,AL,1
+6,Alabama,AL,6
+7,Alabama,AL,2
+8,Alabama,AL,5
+9,Alabama,AL,7
+10,Alabama,AL,STATE
+11,Arkansas,AR,3
+12,Arkansas,AR,4
+13,Arkansas,AR,1
+14,Arkansas,AR,2
+15,Arkansas,AR,STATE
+16,American Samoa,AS,TERRITORY
+17,Arizona,AZ,3
+18,Arizona,AZ,5
+19,Arizona,AZ,4
+20,Arizona,AZ,6
+21,Arizona,AZ,1
+22,Arizona,AZ,2
+23,Arizona,AZ,8
+24,Arizona,AZ,7
+25,Arizona,AZ,9
+26,Arizona,AZ,STATE
+27,California,CA,21
+28,California,CA,49
+29,California,CA,47
+30,California,CA,45
+31,California,CA,28
+32,California,CA,52
+33,California,CA,39
+34,California,CA,23
+35,California,CA,1
+36,California,CA,19
+37,California,CA,25
+38,California,CA,27
+39,California,CA,41
+40,California,CA,40
+41,California,CA,4
+42,California,CA,43
+43,California,CA,51
+44,California,CA,11
+45,California,CA,48
+46,California,CA,44
+47,California,CA,38
+48,California,CA,15
+49,California,CA,2
+50,California,CA,14
+51,California,CA,50
+52,California,CA,24
+53,California,CA,20
+54,California,CA,10
+55,California,CA,34
+56,California,CA,13
+57,California,CA,18
+58,California,CA,42
+59,California,CA,7
+60,California,CA,29
+61,California,CA,26
+62,California,CA,36
+63,California,CA,37
+64,California,CA,32
+65,California,CA,46
+66,California,CA,33
+67,California,CA,6
+68,California,CA,31
+69,California,CA,35
+70,California,CA,8
+71,California,CA,5
+72,California,CA,9
+73,California,CA,17
+74,California,CA,12
+75,California,CA,3
+76,California,CA,22
+77,California,CA,30
+78,California,CA,16
+79,California,CA,53
+80,California,CA,STATE
+81,Colorado,CO,4
+82,Colorado,CO,6
+83,Colorado,CO,5
+84,Colorado,CO,3
+85,Colorado,CO,2
+86,Colorado,CO,1
+87,Colorado,CO,7
+88,Colorado,CO,STATE
+89,Connecticut,CT,4
+90,Connecticut,CT,6
+91,Connecticut,CT,1
+92,Connecticut,CT,5
+93,Connecticut,CT,3
+94,Connecticut,CT,2
+95,Connecticut,CT,STATE
+96,District of Columbia,DC,TERRITORY
+97,Delaware,DE,0
+98,Delaware,DE,STATE
+99,Florida,FL,8
+100,Florida,FL,10
+101,Florida,FL,12
+102,Florida,FL,6
+103,Florida,FL,13
+104,Florida,FL,15
+105,Florida,FL,22
+106,Florida,FL,18
+107,Florida,FL,1
+108,Florida,FL,7
+109,Florida,FL,21
+110,Florida,FL,16
+111,Florida,FL,9
+112,Florida,FL,14
+113,Florida,FL,4
+114,Florida,FL,23
+115,Florida,FL,2
+116,Florida,FL,17
+117,Florida,FL,3
+118,Florida,FL,11
+119,Florida,FL,5
+120,Florida,FL,20
+121,Florida,FL,19
+122,Florida,FL,25
+123,Florida,FL,24
+124,Florida,FL,27
+125,Florida,FL,26
+126,Florida,FL,STATE
+127,Georgia,GA,7
+128,Georgia,GA,10
+129,Georgia,GA,1
+130,Georgia,GA,11
+131,Georgia,GA,6
+132,Georgia,GA,3
+133,Georgia,GA,9
+134,Georgia,GA,8
+135,Georgia,GA,4
+136,Georgia,GA,5
+137,Georgia,GA,2
+138,Georgia,GA,12
+139,Georgia,GA,13
+140,Georgia,GA,14
+141,Georgia,GA,STATE
+142,Guam,GU,TERRITORY
+143,Hawaii,HI,1
+144,Hawaii,HI,2
+145,Hawaii,HI,STATE
+146,Iowa,IA,4
+147,Iowa,IA,1
+148,Iowa,IA,2
+149,Iowa,IA,5
+150,Iowa,IA,3
+151,Iowa,IA,STATE
+152,Idaho,ID,1
+153,Idaho,ID,2
+154,Idaho,ID,STATE
+155,Illinois,IL,16
+156,Illinois,IL,13
+157,Illinois,IL,6
+158,Illinois,IL,14
+159,Illinois,IL,11
+160,Illinois,IL,10
+161,Illinois,IL,20
+162,Illinois,IL,8
+163,Illinois,IL,18
+164,Illinois,IL,15
+165,Illinois,IL,1
+166,Illinois,IL,7
+167,Illinois,IL,19
+168,Illinois,IL,12
+169,Illinois,IL,2
+170,Illinois,IL,17
+171,Illinois,IL,4
+172,Illinois,IL,5
+173,Illinois,IL,9
+174,Illinois,IL,3
+175,Illinois,IL,STATE
+176,Indiana,IN,6
+177,Indiana,IN,2
+178,Indiana,IN,7
+179,Indiana,IN,8
+180,Indiana,IN,4
+181,Indiana,IN,5
+182,Indiana,IN,10
+183,Indiana,IN,9
+184,Indiana,IN,1
+185,Indiana,IN,3
+186,Indiana,IN,STATE
+187,Kansas,KS,1
+188,Kansas,KS,2
+189,Kansas,KS,4
+190,Kansas,KS,3
+191,Kansas,KS,STATE
+192,Kentucky,KY,3
+193,Kentucky,KY,1
+194,Kentucky,KY,5
+195,Kentucky,KY,4
+196,Kentucky,KY,2
+197,Kentucky,KY,6
+198,Kentucky,KY,STATE
+199,Louisiana,LA,1
+200,Louisiana,LA,4
+201,Louisiana,LA,5
+202,Louisiana,LA,6
+203,Louisiana,LA,3
+204,Louisiana,LA,7
+205,Louisiana,LA,2
+206,Louisiana,LA,STATE
+207,Massachusetts,MA,4
+208,Massachusetts,MA,7
+209,Massachusetts,MA,3
+210,Massachusetts,MA,6
+211,Massachusetts,MA,9
+212,Massachusetts,MA,1
+213,Massachusetts,MA,8
+214,Massachusetts,MA,5
+215,Massachusetts,MA,2
+216,Massachusetts,MA,10
+217,Massachusetts,MA,STATE
+218,Maryland,MD,8
+219,Maryland,MD,2
+220,Maryland,MD,6
+221,Maryland,MD,1
+222,Maryland,MD,4
+223,Maryland,MD,3
+224,Maryland,MD,7
+225,Maryland,MD,5
+226,Maryland,MD,STATE
+227,Maine,ME,2
+228,Maine,ME,1
+229,Maine,ME,STATE
+230,Michigan,MI,4
+231,Michigan,MI,6
+232,Michigan,MI,11
+233,Michigan,MI,7
+234,Michigan,MI,2
+235,Michigan,MI,3
+236,Michigan,MI,1
+237,Michigan,MI,15
+238,Michigan,MI,9
+239,Michigan,MI,10
+240,Michigan,MI,8
+241,Michigan,MI,5
+242,Michigan,MI,14
+243,Michigan,MI,16
+244,Michigan,MI,13
+245,Michigan,MI,12
+246,Michigan,MI,STATE
+247,Minnesota,MN,1
+248,Minnesota,MN,3
+249,Minnesota,MN,4
+250,Minnesota,MN,7
+251,Minnesota,MN,2
+252,Minnesota,MN,8
+253,Minnesota,MN,5
+254,Minnesota,MN,6
+255,Minnesota,MN,STATE
+256,Missouri,MO,2
+257,Missouri,MO,8
+258,Missouri,MO,9
+259,Missouri,MO,7
+260,Missouri,MO,4
+261,Missouri,MO,5
+262,Missouri,MO,6
+263,Missouri,MO,3
+264,Missouri,MO,1
+265,Missouri,MO,STATE
+266,Northern Mariana Islands,MP,TERRITORY
+267,Mississippi,MS,3
+268,Mississippi,MS,4
+269,Mississippi,MS,1
+270,Mississippi,MS,2
+271,Mississippi,MS,5
+272,Mississippi,MS,STATE
+273,Montana,MT,0
+274,Montana,MT,STATE
+275,North Carolina,NC,10
+276,North Carolina,NC,11
+277,North Carolina,NC,6
+278,North Carolina,NC,5
+279,North Carolina,NC,9
+280,North Carolina,NC,3
+281,North Carolina,NC,2
+282,North Carolina,NC,4
+283,North Carolina,NC,1
+284,North Carolina,NC,12
+285,North Carolina,NC,7
+286,North Carolina,NC,8
+287,North Carolina,NC,13
+288,North Carolina,NC,STATE
+289,North Dakota,ND,0
+290,North Dakota,ND,STATE
+291,Nebraska,NE,1
+292,Nebraska,NE,2
+293,Nebraska,NE,3
+294,Nebraska,NE,STATE
+295,New Hampshire,NH,2
+296,New Hampshire,NH,1
+297,New Hampshire,NH,STATE
+298,New Jersey,NJ,7
+299,New Jersey,NJ,4
+300,New Jersey,NJ,2
+301,New Jersey,NJ,3
+302,New Jersey,NJ,5
+303,New Jersey,NJ,12
+304,New Jersey,NJ,11
+305,New Jersey,NJ,10
+306,New Jersey,NJ,6
+307,New Jersey,NJ,1
+308,New Jersey,NJ,13
+309,New Jersey,NJ,9
+310,New Jersey,NJ,8
+311,New Jersey,NJ,STATE
+312,New Mexico,NM,3
+313,New Mexico,NM,2
+314,New Mexico,NM,1
+315,New Mexico,NM,STATE
+316,Nevada,NV,2
+317,Nevada,NV,1
+318,Nevada,NV,3
+319,Nevada,NV,4
+320,Nevada,NV,STATE
+321,New York,NY,31
+322,New York,NY,20
+323,New York,NY,27
+324,New York,NY,22
+325,New York,NY,30
+326,New York,NY,25
+327,New York,NY,24
+328,New York,NY,1
+329,New York,NY,3
+330,New York,NY,2
+331,New York,NY,23
+332,New York,NY,19
+333,New York,NY,13
+334,New York,NY,14
+335,New York,NY,4
+336,New York,NY,15
+337,New York,NY,9
+338,New York,NY,10
+339,New York,NY,17
+340,New York,NY,6
+341,New York,NY,5
+342,New York,NY,8
+343,New York,NY,29
+344,New York,NY,16
+345,New York,NY,28
+346,New York,NY,11
+347,New York,NY,21
+348,New York,NY,18
+349,New York,NY,12
+350,New York,NY,7
+351,New York,NY,26
+352,New York,NY,STATE
+353,Ohio,OH,7
+354,Ohio,OH,15
+355,Ohio,OH,8
+356,Ohio,OH,12
+357,Ohio,OH,4
+358,Ohio,OH,5
+359,Ohio,OH,16
+360,Ohio,OH,2
+361,Ohio,OH,18
+362,Ohio,OH,1
+363,Ohio,OH,19
+364,Ohio,OH,10
+365,Ohio,OH,17
+366,Ohio,OH,11
+367,Ohio,OH,9
+368,Ohio,OH,13
+369,Ohio,OH,6
+370,Ohio,OH,14
+371,Ohio,OH,3
+372,Ohio,OH,STATE
+373,Oklahoma,OK,5
+374,Oklahoma,OK,6
+375,Oklahoma,OK,4
+376,Oklahoma,OK,1
+377,Oklahoma,OK,2
+378,Oklahoma,OK,3
+379,Oklahoma,OK,STATE
+380,Oregon,OR,2
+381,Oregon,OR,5
+382,Oregon,OR,3
+383,Oregon,OR,1
+384,Oregon,OR,4
+385,Oregon,OR,STATE
+386,Pennsylvania,PA,9
+387,Pennsylvania,PA,7
+388,Pennsylvania,PA,17
+389,Pennsylvania,PA,8
+390,Pennsylvania,PA,5
+391,Pennsylvania,PA,13
+392,Pennsylvania,PA,10
+393,Pennsylvania,PA,16
+394,Pennsylvania,PA,21
+395,Pennsylvania,PA,19
+396,Pennsylvania,PA,2
+397,Pennsylvania,PA,20
+398,Pennsylvania,PA,12
+399,Pennsylvania,PA,18
+400,Pennsylvania,PA,11
+401,Pennsylvania,PA,15
+402,Pennsylvania,PA,3
+403,Pennsylvania,PA,4
+404,Pennsylvania,PA,1
+405,Pennsylvania,PA,6
+406,Pennsylvania,PA,14
+407,Pennsylvania,PA,STATE
+408,Rhode Island,RI,2
+409,Rhode Island,RI,1
+410,Rhode Island,RI,STATE
+411,South Carolina,SC,4
+412,South Carolina,SC,2
+413,South Carolina,SC,3
+414,South Carolina,SC,1
+415,South Carolina,SC,6
+416,South Carolina,SC,5
+417,South Carolina,SC,7
+418,South Carolina,SC,STATE
+419,South Dakota,SD,0
+420,South Dakota,SD,STATE
+421,Tennessee,TN,7
+422,Tennessee,TN,2
+423,Tennessee,TN,4
+424,Tennessee,TN,1
+425,Tennessee,TN,3
+426,Tennessee,TN,6
+427,Tennessee,TN,5
+428,Tennessee,TN,9
+429,Tennessee,TN,8
+430,Tennessee,TN,STATE
+431,Texas,TX,7
+432,Texas,TX,26
+433,Texas,TX,23
+434,Texas,TX,6
+435,Texas,TX,12
+436,Texas,TX,8
+437,Texas,TX,21
+438,Texas,TX,19
+439,Texas,TX,5
+440,Texas,TX,14
+441,Texas,TX,3
+442,Texas,TX,22
+443,Texas,TX,13
+444,Texas,TX,17
+445,Texas,TX,11
+446,Texas,TX,28
+447,Texas,TX,30
+448,Texas,TX,29
+449,Texas,TX,20
+450,Texas,TX,2
+451,Texas,TX,25
+452,Texas,TX,10
+453,Texas,TX,24
+454,Texas,TX,1
+455,Texas,TX,9
+456,Texas,TX,4
+457,Texas,TX,15
+458,Texas,TX,18
+459,Texas,TX,16
+460,Texas,TX,27
+461,Texas,TX,31
+462,Texas,TX,32
+463,Texas,TX,36
+464,Texas,TX,34
+465,Texas,TX,35
+466,Texas,TX,33
+467,Texas,TX,STATE
+468,Utah,UT,3
+469,Utah,UT,1
+470,Utah,UT,2
+471,Utah,UT,4
+472,Utah,UT,STATE
+473,Virginia,VA,10
+474,Virginia,VA,1
+475,Virginia,VA,6
+476,Virginia,VA,11
+477,Virginia,VA,7
+478,Virginia,VA,8
+479,Virginia,VA,4
+480,Virginia,VA,2
+481,Virginia,VA,9
+482,Virginia,VA,3
+483,Virginia,VA,5
+484,Virginia,VA,STATE
+485,US Virgin Islands,VI,TERRITORY
+486,Vermont,VT,0
+487,Vermont,VT,STATE
+488,Washington,WA,4
+489,Washington,WA,5
+490,Washington,WA,2
+491,Washington,WA,8
+492,Washington,WA,3
+493,Washington,WA,1
+494,Washington,WA,9
+495,Washington,WA,7
+496,Washington,WA,6
+497,Washington,WA,10
+498,Washington,WA,STATE
+499,Wisconsin,WI,9
+500,Wisconsin,WI,1
+501,Wisconsin,WI,2
+502,Wisconsin,WI,6
+503,Wisconsin,WI,7
+504,Wisconsin,WI,4
+505,Wisconsin,WI,8
+506,Wisconsin,WI,3
+507,Wisconsin,WI,5
+508,Wisconsin,WI,STATE
+509,West Virginia,WV,1
+510,West Virginia,WV,3
+511,West Virginia,WV,2
+512,West Virginia,WV,STATE
+513,Wyoming,WY,0
+514,Wyoming,WY,STATE

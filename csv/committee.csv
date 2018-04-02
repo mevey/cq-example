@@ -1,0 +1,393 @@
+committee_id,subcommitee_id,type,committee_name,subcommittee_name,chamber,congress_session,committee_session
+1,1,S,Committee on Appropriations,Subcommittee on the Department of the Interior and Related Agencies,HOUSE,105,1
+2,2,S,Committee on Banking and Financial Services,"Subcommittee on Capital Markets, Securities and Government Sponsored Enterprises",HOUSE,105,1
+3,3,S,Committee on Commerce,Subcommittee on Health and Environment and Oversight and Investigations,HOUSE,105,2
+4,4,S,Committee on District of Columbia District of Columbia,Subcommittee on Health and Environment and Oversight and Investigations,HOUSE,104,1
+5,5,S,Committee on Government Reform and Oversight,"Subcommittee on National Security, International Affairs, and Criminal Justice",HOUSE,105,1
+6,6,S,Committee on International Relations International Relations,Subcommittee on Human Resources,HOUSE,105,2
+7,7,S,Committee on Resources,Subcommittee on National Parks and Public Lands,HOUSE,105,1
+8,8,S,Committee on Rules,Subcommittee on Legislative and Budget Process,HOUSE,105,2
+9,9,S,Committee on Transportation and Infrastructure Transportation,Subcommittee on Legislative and Budget Process,HOUSE,105,2
+10,10,S,Committee on Science,Subcommittee on Technology,HOUSE,105,1
+11,11,S,Committee on Small Business Small Business,Subcommittee on Technology,HOUSE,105,1
+12,12,S,Committee on the Judiciary Judiciary,Subcommittee on Government Programs and Oversight,HOUSE,105,2
+13,13,S,Committee on Veterans' Affairs,Subcommittee on Oversight and Investigations,HOUSE,105,1
+14,14,S,Committee on Ways and Means,Subcommittee on Human Resources,HOUSE,105,2
+15,15,S,Committee on Appropriations Appropriations,"Subcommittee on National Security, International Affairs, and Criminal Justice",SENATE,105,2
+16,16,S,Committee on Energy and Natural Resources Energy and Natural Resources,Subcommittee on the Department,SENATE,105,2
+17,17,S,Committee on Environment and Public Works Environment and Public Works,Subcommittee on the Department,SENATE,105,1
+18,18,S,Committee on Finance Finance,"Subcommittee on Clean Air, Wetlands, Private Property and Nuclear Safety",SENATE,105,2
+19,19,S,Committee on Foreign Relations,Subcommittee on East Asian and Pacific Affairs,SENATE,105,2
+20,20,S,Committee on Governmental Affairs,"Subcommittee on International Security, Proliferation, and Federal Services",SENATE,105,1
+21,21,S,Committee on Rules and Administration Rules and Administration,"Subcommittee on International Security, Proliferation, and Federal Services",SENATE,106,1
+22,22,S,Committee on Appropriations,Subcommittee on the Department of the Interior and Related Agencies,HOUSE,106,2
+23,23,S,Committee on Armed Services,Subcommittee on the Civil Service,HOUSE,106,2
+24,24,S,Committee on Commerce,Subcommittee on Health and Environment,HOUSE,106,1
+25,25,S,Committee on Education and the Workforce Education and the Workforce,"Subcommittee on Telecommunications, Trade, and Consumer Protection",HOUSE,106,2
+26,26,S,Committee on Energy and Commerce Energy and Commerce,"Subcommittee on Telecommunications, Trade, and Consumer Protection",HOUSE,104,1
+27,27,S,Committee on Government Reform,"Subcommittee on Government Management, Information, and Technology",HOUSE,106,2
+28,28,S,Committee on International Relations,Subcommittee on International Economic Policy and Trade,HOUSE,106,1
+29,29,S,Committee on Resources Resources  Subcommittee on National Parks and Public Lands and Subcommittee on Forest and Forest Health,Subcommittee on Asia and the Pacific,HOUSE,106,2
+30,30,S,Committee on Rules Rules,Subcommittee on National Parks and Public Lands,HOUSE,106,1
+31,31,S,Committee on Science,Subcommittee on Technology,HOUSE,106,1
+32,32,S,Committee on Small Business,Subcommittee on Government Programs and Oversight,HOUSE,106,1
+33,33,S,Committee on the Budget The Budget,"Subcommittee on Empowerment and Subcommittee on Rural Enterprises, Business Opportunities, and Special Small Business Problems",HOUSE,106,2
+34,34,S,Committee on the Judiciary Judiciary,"Subcommittee on Empowerment and Subcommittee on Rural Enterprises, Business Opportunities, and Special Small Business Problems",HOUSE,106,2
+35,35,S,Committee on Veterans' Affairs,Subcommittee on Benefit,HOUSE,106,1
+36,36,S,Committee on Ways and Means,Subcommittee on Health,HOUSE,106,1
+37,37,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture",Subcommittee on Health,SENATE,106,2
+38,38,S,Committee on Appropriations Appropriations,"Subcommittee on Research, Nutrition and General Legislation,",SENATE,106,2
+39,39,S,"Committee on Banking, Housing, and Urban Affairs Banking","Subcommittee on Research, Nutrition and General Legislation,",SENATE,106,2
+40,40,S,"Committee on Commerce, Science, and Transportation Commerce","Subcommittee on Research, Nutrition and General Legislation,",SENATE,106,1
+41,41,S,Committee on Energy and Natural Resources Energy and Natural Resources,"Subcommittee on Science, Technology, and Space",SENATE,106,2
+42,42,S,Committee on Indian Affairs Indian Affairs,"Subcommittee on Science, Technology, and Space",SENATE,106,2
+43,43,S,Committee on Environment and Public Works,"Subcommittee on Clean Air, Wetlands, Private Property, and Nuclear Safety",SENATE,106,2
+44,44,S,Committee on Foreign Relations Foreign Relations,"Subcommittee on Fisheries, Wildlife, and Water",SENATE,106,1
+45,45,S,Committee on Governmental Affairs Governmental Affairs,Subcommittee on African Affairs,SENATE,106,2
+46,46,S,Committee on the Budget Budget,"International Security, Proliferation, and Federal Services Subcommittee",SENATE,106,1
+47,47,S,Committee on Resources Resources,"International Security, Proliferation, and Federal Services Subcommittee",SENATE,107,2
+48,48,S,Committee on Judiciary,"Subcommittee on Technology, Terrorism, and Government Information",SENATE,106,2
+49,49,S,Committee on Small Business Small Business,Subcommittee on Administrative Oversight and the Courts,SENATE,106,2
+50,50,S,Committee on Appropriations,Subcommittee on Energy and Water Development,HOUSE,107,2
+51,51,S,Committee on Education and the Workforce,Subcommittee on Education Reform,HOUSE,107,2
+52,52,S,Committee on Energy and Commerce,Subcommittee on Energy and Air Quality,HOUSE,107,2
+53,53,S,Committee on Financial Services,Subcommittee on International Monetary Policy and Trade,HOUSE,107,2
+54,54,S,Committee on Government Reform,"Subcommittee on Criminal Justice, Drug Policy and Human Resources",HOUSE,107,1
+55,55,S,Committee on House Administration House Administration,"Subcommittee on Government Efficiency, Financial Management and Intergovernmental Relations",HOUSE,107,1
+56,56,S,Committee on International Relations International Relations,"Subcommittee on Government Efficiency, Financial Management and Intergovernmental Relations",HOUSE,107,1
+57,57,S,Committee on Science Science,Subcommittee on Forests and Forest Health,HOUSE,107,1
+58,58,S,Committee on Small Business,"Subcommittee on Rural Enterprises, Agriculture, and Technology and Subcommittee on Workforce, Empowerment and Government Programs",HOUSE,107,1
+59,59,S,Committee on the Budget The Budget,Subcommittee on Regulatory Reform and Paperwork Reduction,HOUSE,107,1
+60,60,S,Committee on Ways and Means Ways and Means  Subcommittee on Social Security,Subcommittee on Regulatory Reform and Paperwork Reduction,HOUSE,107,2
+61,61,S,Committee on Transportation and Infrastructure,Subcommittee on Highways and Transportation,HOUSE,107,2
+62,62,S,Committee on Veterans' Affairs,Subcommittee on Health,HOUSE,107,1
+63,63,S,Select Committee on Homeland Security Homeland Security,Subcommittee on Trade,HOUSE,107,2
+64,64,S,Select Committee on Intelligence,Subcommittee on Trade,HOUSE,107,2
+65,65,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture",Subcommittee on Trade,SENATE,107,1
+66,66,S,Committee on Appropriations Appropriations,Subcommittee on Production and Price Competitiveness,SENATE,107,2
+67,67,S,Committee on Indian Affairs Indian Affairs,Subcommittee on Production and Price Competitiveness,SENATE,107,2
+68,68,S,Committee on Armed Services Armed Services,Subcommittee on Production and Price Competitiveness,SENATE,107,2
+69,69,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Readiness and Management Support,SENATE,107,1
+70,70,S,"Committee on Commerce, Science, and Transportation Commerce  Subcommittee on Surface Transportation and Merchant Marine",Subcommittee on Housing and Transportation,SENATE,107,2
+71,71,S,Committee on Energy and Natural Resources Energy and Natural Resources,"Subcommittee on Consumer Affairs, Foreign Commerce and Tourism",SENATE,107,1
+72,72,S,Committee on Environment and Public Works Environment and Public Works,Subcommittee on Public Lands and Forests,SENATE,107,2
+73,73,S,Committee on Finance Finance,"Subcommittee on Fisheries, Wildlife, and Water",SENATE,107,1
+74,74,S,Committee on Foreign Relations,"Subcommittee on International Economic Policy, Export and Trade Promotion",SENATE,107,2
+75,75,S,Committee on Governmental Affairs Governmental Affairs,Subcommittee on African Affairs,SENATE,107,2
+76,76,S,"Committee on Health, Education, Labor, and Pensions HELP","Oversight of Government Management, Restructuring, and the District of Columbia Subcommittee",SENATE,107,2
+77,77,S,Committee on Judiciary,Subcommittee on Immigration,SENATE,107,2
+78,78,S,Committee on Rules and Administration Rules and Administration,"Subcommittee on Technology, Terrorism, and Government Information",SENATE,107,1
+79,79,S,Committee on Small Business and Entrepreneurship Small Business,"Subcommittee on Technology, Terrorism, and Government Information",SENATE,107,1
+80,80,S,Committee on the Budget Budget,"Subcommittee on Technology, Terrorism, and Government Information",SENATE,107,2
+81,81,S,Committee on Veterans' Affairs Veterans' Affairs,"Subcommittee on Technology, Terrorism, and Government Information",SENATE,107,1
+82,82,P,Special Committee on Aging Aging,"Subcommittee on Technology, Terrorism, and Government Information",SENATE,113,2
+83,83,S,Committee on Appropriations,"Subcommittee on the Departments of Commerce, Justice, and State, The",HOUSE,108,1
+84,84,S,"Committee on Commerce Commerce  Subcommittee on Courts, the Internet, and Intellectual Property","Subcommittee on Foreign Operations, Export Financing, and Related",HOUSE,108,1
+85,85,S,Committee on Education and the Workforce Education and the Workforce,"Subcommittee on Foreign Operations, Export Financing, and Related",HOUSE,108,2
+86,86,S,Committee on Financial Services,Subcommittee on Housing and Community Opportunity,HOUSE,108,1
+87,87,S,Committee on Government Reform,"Subcommittee on Criminal Justice, Drug Policy and Human Resources",HOUSE,108,1
+88,88,S,Committee on Homeland Security Homeland Security,Subcommittee on Human Rights and Wellness,HOUSE,108,1
+89,89,S,Committee on House Administration House Administration,Subcommittee on Human Rights and Wellness,HOUSE,108,1
+90,90,S,Committee on Resources Resources,Subcommittee on Human Rights and Wellness,HOUSE,108,2
+91,91,S,Committee on Rules Rules,Subcommittee on Energy and Mineral Resources,HOUSE,108,2
+92,92,S,Committee on Science Science,Subcommittee on Energy and Mineral Resources,HOUSE,108,1
+93,93,S,Committee on Small Business,"Subcommittee on Workforce, Empowerment & Government Programs",HOUSE,108,1
+94,94,S,Committee on the Budget The Budget,"Subcommittee on Rural Enterprises, Agriculture, & Technology",HOUSE,108,2
+95,95,S,Committee on the Judiciary,Subcommittee on the Constitution,HOUSE,108,1
+96,96,L,"Permanent Select Committee on Intelligence Intelligence (Permanent)  Subcommittee on Crime, Terrorism, and Homeland Security","Subcommittee on Immigration, Border Security, and Claims",HOUSE,108,2
+97,97,S,Committee on Transportation and Infrastructure,Subcommittee on Railroads,HOUSE,108,1
+98,98,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Water Resources and Environment,HOUSE,108,2
+99,99,S,Committee on Ways and Means,Subcommittee on Trade,HOUSE,108,2
+100,100,S,Select Committee on Homeland Security  Homeland Security,Subcommittee on Human Resources,HOUSE,108,1
+101,101,S,Select Committee on Homeland Security  Homeland Security,Subcommittee on Human Resources,HOUSE,108,1
+102,102,S,"Committee on Small Business and Entrepreneurship Small Business  Subcommittee on Workforce, Empowerment & Government Programs   Subcommittee on Tax, Finance & Exports",Subcommittee on Human Resources,JOINT,108,1
+103,103,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture",Subcommittee on Human Resources,SENATE,108,1
+104,104,S,Committee on Appropriations Appropriations,Subcommittee on Production and Price Competitiveness,SENATE,108,2
+105,105,S,Committee on Indian Affairs Indian Affairs,Subcommittee on Production and Price Competitiveness,SENATE,108,1
+106,106,S,Committee on Armed Services Armed Services,Subcommittee on Production and Price Competitiveness,SENATE,108,1
+107,107,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Personnel,SENATE,108,1
+108,108,S,"Committee on Commerce, Science, and Transportation Commerce",Subcommittee on Securities and Investment,SENATE,108,1
+109,109,S,Committee on Energy and Natural Resources,Subcommittee on Energy,SENATE,108,1
+110,110,S,Committee on Environment and Public Works,Subcommittee on Transportation and Infrastructure,SENATE,108,1
+111,111,S,Committee on Finance Finance,Subcommittee on Transportation and Infrastructure,SENATE,108,1
+112,112,S,Committee on Foreign Relations Foreign Relations,Subcommittee on Transportation and Infrastructure,SENATE,108,2
+113,113,S,Committee on Governmental Affairs Governmental Affairs,Subcommittee on East Asian and Pacific Affairs,SENATE,108,1
+114,114,S,"Committee on Health, Education, Labor, and Pensions",Subcommittee on Children and Families,SENATE,108,1
+115,115,S,Committee on Judiciary Judiciary,Subcommittee on Aging,SENATE,108,1
+116,116,S,Committee on the Budget Budget,"Subcommittee on Terrorism, Technology and Homeland Security",SENATE,108,2
+117,117,S,Committee on Veterans' Affairs Veterans' Affairs,"Subcommittee on Terrorism, Technology and Homeland Security",SENATE,108,2
+118,118,S,Committee on Agriculture Agriculture,"Subcommittee on Terrorism, Technology and Homeland Security",HOUSE,109,2
+119,119,S,Committee on Appropriations Appropriations,"Subcommittee on Terrorism, Technology and Homeland Security",HOUSE,109,1
+120,120,S,Committee on Armed Services Armed Services,"Subcommittee on Terrorism, Technology and Homeland Security",HOUSE,109,2
+121,121,S,Committee on Education and the Workforce,Subcommittee on 21st Century Competitiveness,HOUSE,109,1
+122,122,S,Committee on Energy and Commerce,Subcommittee on Health,HOUSE,109,2
+123,123,S,Committee on Financial Services,"Subcommittee on Domestic and International Monetary Policy, Trade, and Technology",HOUSE,109,2
+124,124,S,Committee on Foreign Affairs Foreign Affairs,Subcommittee on Financial Institutions and Consumer Credit,HOUSE,109,1
+125,125,S,Committee on Government Reform,Subcommittee on the Federal Workforce and Agency Organization,HOUSE,109,2
+126,126,S,Committee on Homeland Security,"Subcommittee on Economic Security, Infrastructure Protection, and Cybersecurity",HOUSE,109,2
+127,127,S,Committee on House Administration House Administration,"Subcommittee on Economic Security, Infrastructure Protection, and Cybersecurity",HOUSE,109,1
+128,128,S,Committee on Natural Resources,International Relations,HOUSE,109,1
+129,129,S,Committee on Science Science,Subcommittee on Water and Power,HOUSE,109,2
+130,130,S,Committee on Small Business Small Business,Subcommittee on Energy,HOUSE,109,2
+131,131,S,Committee on the Judiciary Judiciary,"Subcommittee on Rural Enterprises, Agriculture & Technology",HOUSE,109,1
+132,132,S,Committee on Transportation and Infrastructure,Subcommittee on Water Resources and Environment,HOUSE,109,2
+133,133,S,Committee on Transportation and Infrastructure,Subcommittee on Railroads,HOUSE,110,2
+134,134,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Aviation,HOUSE,109,2
+135,135,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Economic Opportunity,HOUSE,109,1
+136,136,S,Committee on Ways and Means,Subcommittee on Human Resources,HOUSE,109,1
+137,137,J,Joint Committee on the Library Joint Library,Subcommittee on Select Revenue Measures,HOUSE,109,2
+138,138,L,Permanent Select Committee on Intelligence Intelligence (Permanent)  Subcommittee on Oversight and Investigations,Subcommittee on Select Revenue Measures,HOUSE,109,2
+139,139,S,Committee on Small Business and Entrepreneurship,"Subcommittee on Rural Enterprises, Agriculture & Technology and Subcommittee on Tax, Finance and Exports",JOINT,109,2
+140,140,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture","Subcommittee on Rural Enterprises, Agriculture & Technology and Subcommittee on Tax, Finance and Exports",SENATE,109,1
+141,141,S,Committee on Appropriations Appropriations,"Subcommittee on Forestry, Conservation, and Rural Revitalization",SENATE,109,1
+142,142,S,Committee on Armed Services Armed Services,"Subcommittee on Forestry, Conservation, and Rural Revitalization",SENATE,109,2
+143,143,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Readiness and Management Support,SENATE,109,2
+144,144,S,"Committee on Commerce, Science, and Transportation",Subcommittee on Surface Transportation and Merchant Marine,SENATE,109,1
+145,145,S,Committee on Energy and Natural Resources,Subcommittee on National Parks,SENATE,109,2
+146,146,S,Committee on Environment and Public Works Environment and Public Works,Subcommittee on Public Lands and Forests,SENATE,109,1
+147,147,S,Committee on Foreign Relations Foreign Relations,"Subcommittee on Fisheries, Wildlife, and Water",SENATE,109,2
+148,148,S,"Committee on Health, Education, Labor, and Pensions HELP",Subcommittee on International Operations and Terrorism,SENATE,109,2
+149,149,S,Committee on Homeland Security and Governmental Affairs,Permanent Subcommittee on Investigations,SENATE,109,1
+150,150,S,Committee on Indian Affairs Indian Affairs,"Federal Financial Management, Government Information, and International Security Subcommittee",SENATE,109,1
+151,151,S,Committee on Judiciary Judiciary,"Federal Financial Management, Government Information, and International Security Subcommittee",SENATE,109,1
+152,152,S,Committee on Judiciary Judiciary,"Subcommittee on Immigration, Border Security and Citizenship",SENATE,110,1
+153,153,S,Committee on the Budget Budget,"Subcommittee on Immigration, Border Security and Citizenship",SENATE,109,2
+154,154,S,Committee on Veterans' Affairs Veterans' Affairs,"Subcommittee on Immigration, Border Security and Citizenship",SENATE,109,2
+155,155,S,Committee on Agriculture,Subcommittee on General Farm Commodities and Risk Management,HOUSE,110,1
+156,156,S,Committee on Appropriations,Subcommittee on Energy and Water Development,HOUSE,110,2
+157,157,S,Committee on Armed Services Armed Services,Subcommittee on Financial Services and General Government,HOUSE,110,2
+158,158,S,Committee on Education and Labor Education and Labor,Oversight and Investigations Subcommittee,HOUSE,110,1
+159,159,S,"Committee on Foreign Affairs Foreign Affairs  Subcommittee on International Organizations, Human Rights, and Oversight",Oversight and Investigations Subcommittee,HOUSE,110,1
+160,160,L,Select Committee on Crime Crime,Oversight and Investigations Subcommittee,HOUSE,93,1
+161,161,S,Committee on Energy and Commerce,Subcommittee on Health,HOUSE,110,1
+162,162,S,"Committee on Ways and Means Ways and Means  Subcommittee on Domestic and International Monetary Policy, Trade, and Technology   Committee on Energy and Commerce   Committee on Energy and Commerce",Subcommittee on Health,HOUSE,110,1
+163,163,S,Committee on Financial Services,Subcommittee on Housing and Community Opportunity,HOUSE,110,1
+164,164,S,Committee on Foreign Affairs Foreign Affairs,Subcommittee on the Middle East and South Asia,HOUSE,110,2
+165,165,S,Committee on Homeland Security,Subcommittee on the Western Hemisphere,HOUSE,110,1
+166,166,S,Committee on House Administration House Administration,"Subcommittee on Emerging Threats, Cybersecurity and Science and Technology",HOUSE,110,1
+167,167,S,Committee on House Administration House Administration,Subcommittee on Elections,HOUSE,111,1
+168,168,S,Committee on Natural Resources,Subcommittee on Water and Power,HOUSE,110,1
+169,169,S,Committee on Oversight and Government Reform,Subcommittee on Domestic Policy,HOUSE,110,2
+170,170,S,Committee on Rules Rules,"Subcommittee on Government Management, Organization, and Procurement",HOUSE,110,1
+171,171,S,Committee on Science and Technology Science and Technology,"Subcommittee on Government Management, Organization, and Procurement",HOUSE,110,1
+172,172,S,Committee on Small Business,Subcommittee on Space and Aeronautics,HOUSE,110,2
+173,173,S,Committee on the Budget The Budget,Subcommittee on Space and Aeronautics,HOUSE,110,1
+174,174,S,Committee on the Judiciary,"Subcommittee on Crime, Terrorism, and Homeland Security",HOUSE,110,2
+175,175,S,Committee on Veterans' Affairs,Subcommittee on Health,HOUSE,110,2
+176,176,S,Committee on Ways and Means,Subcommittee on Select Revenue Measures,HOUSE,111,2
+177,177,J,Joint Economic Committee,"Subcommittee on Federal Workforce, Postal Service, and the District of Columbia",HOUSE,110,2
+178,178,S,Permanent Select Committee on Intelligence,"Subcommittee on Federal Workforce, Postal Service, and the District of Columbia",HOUSE,110,1
+179,179,L,Select Committee on Energy Independence and Global Warming Energy Independence and Global,"Subcommittee on Federal Workforce, Postal Service, and the District of Columbia",HOUSE,110,1
+180,180,S,Committee on Veterans' Affairs Veterans' Affairs,"Subcommittee on Federal Workforce, Postal Service, and the District of Columbia",JOINT,110,1
+181,181,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture","Subcommittee on Federal Workforce, Postal Service, and the District of Columbia",SENATE,110,2
+182,182,S,Committee on Appropriations Appropriations,"Subcommittee on Rural Revitalization, Conservation, Forestry and Credit",SENATE,110,1
+183,183,S,Committee on Armed Services Armed Services,"Subcommittee on Transportation and Housing and Urban Development, and Related Agencies",SENATE,110,1
+184,184,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Personnel,SENATE,110,1
+185,185,S,"Committee on Commerce, Science, and Transportation","Subcommittee on Science, Technology, and Innovation",SENATE,110,2
+186,186,S,Committee on Energy and Natural Resources,Subcommittee on Public Lands and Forests,SENATE,110,1
+187,187,S,Committee on Environment and Public Works Environment and Public Works,Subcommittee on Public Lands and Forests,SENATE,110,1
+188,188,S,Committee on Finance,"Subcommittee on Energy, Natural Resources, and Infrastructure",SENATE,110,1
+189,189,S,Committee on Foreign Relations Foreign Relations,"Subcommittee on Energy, Natural Resources, and Infrastructure",SENATE,110,2
+190,190,S,"Committee on Health, Education, Labor, and Pensions HELP",Subcommittee on African Affairs,SENATE,110,1
+191,191,S,Committee on Homeland Security and Governmental Affairs,"Oversight of Government Management, the Federal Workforce, and the District of Columbia Subcommittee",SENATE,110,2
+192,192,S,Committee on Indian Affairs Indian Affairs,Ad Hoc Subcommittee on Disaster Recovery,SENATE,110,1
+193,193,P,"Special Committee on Aging Aging  Subcommittee on Antitrust, Competition Policy and Consumer Rights","Subcommittee on Terrorism, Technology and Homeland Security",SENATE,110,2
+194,194,S,Committee on Small Business and Entrepreneurship Small Business,Subcommittee on Human Rights and the Law,SENATE,110,1
+195,195,S,Committee on the Budget Budget,Subcommittee on Human Rights and the Law,SENATE,110,2
+196,196,S,Committee on Agriculture Agriculture,Subcommittee on Human Rights and the Law,HOUSE,111,2
+197,197,S,Committee on Appropriations,Subcommittee on Defense,HOUSE,92,2
+198,198,S,Committee on Appropriations,"Subcommittee on Commerce, Justice, Science, and Related Agencies",HOUSE,111,1
+199,199,S,Committee on Armed Services Armed Services,Subcommittee on Energy and Water Development,HOUSE,111,1
+200,200,S,Committee on Education and Labor Education and Labor,"Subcommittee on Terrorism, Unconventional Threats and Capabilities",HOUSE,111,2
+201,201,S,Committee on Energy and Commerce,Subcommittee on Health,HOUSE,111,2
+202,202,S,Committee on Foreign Affairs Foreign Affairs  Subcommittee on Africa and Global Health,Subcommittee on Health,HOUSE,111,1
+203,203,S,Committee on Financial Services,Subcommittee on Housing and Community Opportunity,HOUSE,111,1
+204,204,S,Committee on Homeland Security,"Subcommittee on Management, Investigations, and Oversight",HOUSE,111,2
+205,205,S,Committee on Judiciary Judiciary,Subcommittee on Elections,HOUSE,111,2
+206,206,S,Committee on Natural Resources,"Subcommittee on National Parks, Forests and Public Lands",HOUSE,111,1
+207,207,S,Committee on Oversight and Government Reform,"Subcommittee on Information Policy, Census, and National Archives",HOUSE,111,2
+208,208,S,Committee on Rules Rules,Subcommittee on National Security and Foreign Affairs,HOUSE,111,1
+209,209,S,Committee on Science and Technology Science and Technology,Subcommittee on Rules and Organization of the House,HOUSE,111,1
+210,210,S,Committee on Small Business Small Business,Subcommittee on Rules and Organization of the House,HOUSE,111,2
+211,211,S,Committee on the Budget The Budget,Subcommittee on Rules and Organization of the House,HOUSE,111,1
+212,212,S,Committee on Transportation and Infrastructure,"Subcommittee on Railroads, Pipelines, and Hazardous Materials",HOUSE,111,1
+213,213,S,Committee on Veterans' Affairs Veterans' Affairs,"Subcommittee on Economic Development, Public Buildings, and Emergency Management",HOUSE,111,1
+214,214,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Oversight and Investigations,HOUSE,112,1
+215,215,L,Permanent Select Committee on Intelligence,Subcommittee on Intelligence Community Management,HOUSE,111,1
+216,216,L,Select Committee on Energy Independence and Global Warming Energy Independence and Global,Subcommittee on Intelligence Community Management,HOUSE,111,1
+217,217,S,"Committee on Agriculture, Nutrition, and Forestry",Subcommittee on Intelligence Community Management,SENATE,111,1
+218,218,S,Committee on Appropriations,"Subcommittee on Energy, Science and Technology",SENATE,111,2
+219,219,S,Committee on Armed Services Armed Services,"Subcommittee on Transportation and Housing and Urban Development, and Related Agencies",SENATE,111,1
+220,220,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Strategic Forces,SENATE,111,2
+221,221,S,Committee on Indian Affairs Indian Affairs,"Subcommittee on Housing, Transportation, and Community Development",SENATE,111,2
+222,222,S,Committee on Budget Budget Committee,Subcommittee on Security and International Trade and Finance,SENATE,111,1
+223,223,S,"Committee on Commerce, Science, and Transportation","Subcommittee on Aviation Operations, Safety, and Security",SENATE,111,1
+224,224,S,Committee on Energy and Natural Resources,Subcommittee on Public Lands and Forests,SENATE,111,2
+225,225,S,Committee on Environment and Public Works,Subcommittee on Water and Wildlife,SENATE,111,1
+226,226,S,Committee on Finance Finance,Subcommittee on Clean Air and Nuclear Safety,SENATE,111,1
+227,227,S,Committee on Foreign Relations Foreign Relations,Subcommittee on Clean Air and Nuclear Safety,SENATE,111,1
+228,228,S,"Committee on Health, Education, Labor, and Pensions HELP",Subcommittee on African Affairs,SENATE,111,2
+229,229,S,Committee on Homeland Security and Governmental Affairs,Permanent Subcommittee on Investigations,SENATE,111,2
+230,230,P,Special Committee on Aging Aging,Permanent Subcommittee on Investigations,SENATE,111,1
+231,231,S,Committee on Judiciary Judiciary,"Subcommittee Federal Financial Management, Government Information, Federal Services, and International Security",SENATE,111,2
+232,232,O,Senate Caucus on International Narcotics Control Senate Narcotics Caucus Senate Caucus on International Narcotics Control,Subcommittee on the Constitution,SENATE,111,1
+233,233,S,Committee on Rules and Administration Rules and Administration,Subcommittee on Administrative Oversight and the Courts,SENATE,111,2
+234,234,S,Committee on Small Business and Entrepreneurship Small Business,Subcommittee on Administrative Oversight and the Courts,SENATE,111,1
+235,235,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Administrative Oversight and the Courts,SENATE,111,2
+236,236,P,Impeachment Trial Committee Impeachment Trial (Nixon),Subcommittee on Administrative Oversight and the Courts,SENATE,101,2
+237,237,J,Joint Economic Committee Joint Economic,Subcommittee on Administrative Oversight and the Courts,SENATE,111,2
+238,238,L,Select Committee on Intelligence Intelligence,Subcommittee on Administrative Oversight and the Courts,SENATE,111,1
+239,239,S,Committee on Agriculture Agriculture,Subcommittee on Administrative Oversight and the Courts,HOUSE,112,1
+240,240,S,Committee on Natural Resources Natural Resources,"Subcommittee on Conservation, Energy, and Forestry",HOUSE,112,1
+241,241,S,Committee on Appropriations,"Subcommittee on Commerce, Justice, Science, and Related Agencies",HOUSE,112,1
+242,242,S,Committee on Appropriations Appropriations,"Subcommittee on Commerce, Justice, Science, and Related Agencies",HOUSE,113,1
+243,243,S,Committee on Armed Services Armed Services,Subcommittee on Energy and Water Development,HOUSE,112,1
+244,244,S,Committee on Education and the Workforce Education and the Workforce,Subcommittee on Seapower and Projection Forces,HOUSE,112,1
+245,245,S,Committee on Oversight and Government Reform Oversight and Government Reform  Subcommittee on Higher Education and Workforce Training,Subcommittee on Seapower and Projection Forces,HOUSE,112,1
+246,246,S,Committee on Energy and Commerce,Subcommittee on Health,HOUSE,112,1
+247,247,S,Committee on Financial Services,Subcommittee on International Monetary Policy and Trade,HOUSE,112,1
+248,248,S,"Committee on Foreign Affairs Foreign Affairs  Subcommittee on Europe and Eurasia   Subcommittee on Africa, Global Health, and Human Rights",Subcommittee on International Monetary Policy and Trade,HOUSE,112,1
+249,249,S,Committee on Homeland Security,"Subcommittee on Emergency Preparedness, Response, and Communications",HOUSE,112,1
+250,250,S,Committee on House Administration,Subcommittee on Elections,HOUSE,112,1
+251,251,S,Committee on Rules,Subcommittee on Legislative and Budget Process,HOUSE,112,2
+252,252,S,"Committee on Science, Space, and Technology Science, Space, and Technology",Subcommittee on Legislative and Budget Process,HOUSE,112,2
+253,253,S,Committee on Small Business,"Subcommittee on Investigations, Oversight, and Regulation",HOUSE,112,2
+254,254,S,Committee on the Budget The Budget,Subcommittee on Healthcare and Technology,HOUSE,112,2
+255,255,S,Committee on the Judiciary,"Subcommittee on Crime, Terrorism, and Homeland Security",HOUSE,112,1
+256,256,S,Committee on Transportation and Infrastructure,"Subcommittee on Economic Development, Public Buildings, and Emergency Management",HOUSE,112,1
+257,257,S,Committee on Ways and Means Ways and Means  Subcommittee on Oversight   Subcommittee on Health,Subcommittee on Economic Opportunity,HOUSE,112,1
+258,258,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Health,JOINT,112,2
+259,259,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture",Subcommittee on Health,SENATE,112,1
+260,260,S,Committee on Appropriations Appropriations,Subcommittee on Health,SENATE,112,2
+261,261,S,Committee on Indian Affairs Indian Affairs,Subcommittee on Health,SENATE,112,1
+262,262,S,Committee on Armed Services Armed Services,Subcommittee on Health,SENATE,112,1
+263,263,S,"Committee on Banking, Housing, and Urban Affairs",Subcommittee on Security and International Trade and Finance,SENATE,112,1
+264,264,S,"Committee on Commerce, Science, and Transportation","Subcommittee on Surface Transportation and Merchant Marine Infrastructure, Safety, and Security",SENATE,112,1
+265,265,S,Committee on Energy and Natural Resources Energy and Natural Resources,"Subcommittee on Surface Transportation and Merchant Marine Infrastructure, Safety, and Security",SENATE,112,2
+266,266,S,Committee on Environment and Public Works Environment and Public Works,Subcommittee on National Parks,SENATE,112,1
+267,267,S,Committee on Finance Finance,"Subcommittee on Superfund, Toxics and Environmental Health",SENATE,112,2
+268,268,S,Committee on Foreign Relations,Subcommittee on African Affairs,SENATE,112,1
+269,269,S,"Committee on Health, Education, Labor, and Pensions",Subcommittee on Children and Families,SENATE,112,2
+270,270,S,"Committee on Health, Education, Labor, and Pensions Health",Subcommittee on Children and Families,SENATE,112,2
+271,271,S,Committee on Homeland Security and Governmental Affairs Homeland and Governmental Affairs  Subcommittee Ad Hoc   Subcommittee on Disaster Recovery,Subcommittee on Primary Health and Aging,SENATE,112,1
+272,272,S,Committee on Judiciary Judiciary,"Subcommittee Federal Financial Management, Government Information, Federal Services, and International Security",SENATE,112,1
+273,273,S,Committee on Rules and Administration Rules and Administration,Subcommittee on Crime and Terrorism,SENATE,112,1
+274,274,S,Committee on Small Business and Entrepreneurship Small Business,Subcommittee on Crime and Terrorism,SENATE,112,1
+275,275,S,Committee on the Budget Budget,Subcommittee on Crime and Terrorism,SENATE,112,1
+276,276,J,Joint Economic Committee Joint Economic,Subcommittee on Crime and Terrorism,SENATE,112,1
+277,277,S,Joint Select Committee on Deficit Reduction Deficit Reduction,Subcommittee on Crime and Terrorism,SENATE,112,1
+278,278,S,Joint Select Committee on Deficit Reduction Deficit Reduction,Subcommittee on Crime and Terrorism,SENATE,112,1
+279,279,L,Select Committee on Intelligence Intelligence,Subcommittee on Crime and Terrorism,SENATE,112,1
+280,280,S,Special Committee on Aging Aging,Subcommittee on Crime and Terrorism,SENATE,112,2
+281,281,S,Committee on Agriculture Agriculture,Subcommittee on Crime and Terrorism,HOUSE,113,2
+282,282,S,Committee on Armed Services Armed Services,"Subcommittee on Agriculture, Rural Development, Food and Drug",HOUSE,113,1
+283,283,S,Committee on Armed Services Armed Services,Subcommittee on Tactical Air and Land Forces,HOUSE,113,1
+284,284,S,Committee on Education and the Workforce Education and the Workforce,Subcommittee on Tactical Air and Land Forces,HOUSE,113,2
+285,285,S,Committee on Energy and Commerce,Subcommittee on Health,HOUSE,113,1
+286,286,S,Committee on Ethics Standards,Subcommittee on Environment and the Economy,HOUSE,113,1
+287,287,S,Committee on Financial Services Financial Services,Subcommittee on Environment and the Economy,HOUSE,113,2
+288,288,S,"Committee on Foreign Affairs Foreign Affairs  Subcommittee on Europe, Eurasia, and Emerging Threats   Subcommittee on Terrorism, Nonproliferation, and Trade",Subcommittee on Capital Markets and Government Sponsored Enterprises,HOUSE,113,1
+289,289,S,Committee on Homeland Security,"Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies",HOUSE,113,2
+290,290,S,Committee on House Administration House Administration,Subcommittee on Counterterrorism and Intelligence,HOUSE,113,1
+291,291,S,Committee on Natural Resources,Subcommittee on Energy and Mineral Resources,HOUSE,113,2
+292,292,S,Committee on Oversight and Government Reform Oversight and Government Reform,Subcommittee on Energy and Mineral Resources,HOUSE,113,1
+293,293,S,"Committee on Science, Space, and Technology Science, Space, and Technology","Subcommittee on Federal Workforce, Us Postal Service and the Census",HOUSE,113,1
+294,294,S,Committee on Small Business,"Subcommittee on Economic Growth, Tax and Capital Access",HOUSE,113,2
+295,295,S,Committee on Small Business  Small Business,Subcommittee on Contracting and Workforce,HOUSE,113,1
+296,296,S,Committee on the Budget The Budget,Subcommittee on Health and Technology,HOUSE,113,1
+297,297,S,Committee on the Judiciary Judiciary,Subcommittee on Health and Technology,HOUSE,113,2
+298,298,S,Committee on Transportation and Infrastructure,"Subcommittee on Railroads, Pipelines, and Hazardous Materials",HOUSE,113,1
+299,299,S,Committee on Veterans' Affairs,Subcommittee on Economic Opportunity (eo),HOUSE,113,1
+300,300,S,Committee on Veterans' Affairs,Subcommittee on Disability Assistance and Memorial Affairs,HOUSE,114,1
+301,301,S,Committee on Ways and Means Ways and Means,Subcommittee on Disability Assistance and Memorial Affairs,HOUSE,113,1
+302,302,L,Select Committee on the Events Surrounding the 2012 Terrorist Attack in Benghazi Benghazi,Subcommittee on Select Revenue Measures,HOUSE,113,2
+303,303,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture",Subcommittee on Select Revenue Measures,SENATE,113,1
+304,304,S,Committee on Appropriations Appropriations,"Subcommittee on Conservation, Forestry and Natural Resources",SENATE,113,2
+305,305,S,Committee on Indian Affairs Indian Affairs,"Subcommittee on Conservation, Forestry and Natural Resources",SENATE,113,1
+306,306,S,Committee on Armed Services Armed Services,"Subcommittee on Conservation, Forestry and Natural Resources",SENATE,113,1
+307,307,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Personnel,SENATE,113,2
+308,308,S,Committee on Budget Senate-Budget,Subcommittee on National Security and International Trade and Finance,SENATE,113,1
+309,309,S,"Committee on Commerce, Science, and Transportation","Subcommittee on Oceans, Atmosphere, Fisheries, and Coast Guard",SENATE,113,2
+310,310,S,Committee on Energy and Natural Resources Energy and Natural Resources,Subcommittee on Science and Space,SENATE,113,2
+311,311,S,Committee on Environment and Public Works Environment and Public Works,"Subcommittee on Public Lands, Forests, and Mining",SENATE,113,2
+312,312,S,Committee on Finance Finance,Subcommittee on Water and Wildlife,SENATE,113,2
+313,313,S,Committee on Foreign Relations Foreign Relations,"Subcommittee on Social Security, Pensions, and Family Policy",SENATE,113,2
+314,314,S,"Committee on Health, Education, Labor, and Pensions HELP","Subcommittee on International Development and Foreign Assistance, Economic Affairs, International Environmental Protection, and Peace Corps",SENATE,113,1
+315,315,S,Committee on Homeland Security and Governmental Affairs,"Subcommittee on Emergency Management, Intergovernmental Relations, and the District of Columbia",SENATE,113,2
+316,316,L,Committee on Intelligence Intelligence,"Subcommittee on Emergency Management, Intergovernmental Relations, and the District of Columbia",SENATE,113,1
+317,317,S,Committee on Judiciary Judiciary,"Subcommittee on Emergency Management, Intergovernmental Relations, and the District of Columbia",SENATE,113,1
+318,318,S,Committee on Permanent Select Committee on Intelligence house-permintel,Subcommittee on Bankruptcy and the Courts,SENATE,113,2
+319,319,S,Committee on Rules and Administration Rules and Administration,Subcommittee on Bankruptcy and the Courts,SENATE,113,1
+320,320,S,Committee on Small Business and Entrepreneurship Small Business,Subcommittee on Bankruptcy and the Courts,SENATE,113,1
+321,321,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Bankruptcy and the Courts,SENATE,113,1
+322,322,S,Joint Economic Committee Economic,Subcommittee on Bankruptcy and the Courts,SENATE,113,2
+323,323,S,Ad Hoc Committee on Energy Energy (Ad Hoc) House Energy (Ad Hoc),Subcommittee on Bankruptcy and the Courts,HOUSE,95,2
+324,324,S,Committee on Agriculture,Subcommittee on General Farm Commodities and Risk Management,HOUSE,114,1
+325,325,S,Committee on Appropriations Appropriations,"Subcommittee on Biotechnology, Horticulture, and Research",HOUSE,114,1
+326,326,S,Committee on Armed Services,Subcommittee on Readiness Hearing,HOUSE,114,2
+327,327,S,"Committee on Foreign Affairs Foreign Affairs  Subcommittee on Terrorism, Nonproliferation, and Trade",Subcommittee on Oversight and Investigations,HOUSE,114,2
+328,328,S,Committee on Education and the Workforce Education and the Workforce,Subcommittee on Seapower and Projection Forces,HOUSE,114,1
+329,329,S,Committee on Energy and Commerce,Subcommittee on Communications and Technology,HOUSE,114,1
+330,330,S,Committee on Financial Services Financial Services,Subcommittee on Health,HOUSE,114,1
+331,331,S,Committee on Homeland Security,"Subcommittee on Emergency Preparedness, Response, and Communications",HOUSE,114,2
+332,332,S,Committee on Oversight and Government Reform Oversight and Government Reform  Subcommittee on Information Technology,Subcommittee on Transportation Security,HOUSE,114,2
+333,333,S,Committee on House Administration Administration,"Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies",HOUSE,114,1
+334,334,S,Committee on Natural Resources,Subcommittee on Energy and Mineral Resources,HOUSE,114,1
+335,335,S,Committee on Rules,Subcommittee on Rules and Organization,HOUSE,114,1
+336,336,S,"Committee on Science, Space, and Technology Science, Space, and Technology",Subcommittee On,HOUSE,114,2
+337,337,S,Committee on Small Business Small Business,Subcommittee On,HOUSE,114,1
+338,338,S,Committee on the Budget The Budget,Subcommittee on Contracting and Workforce,HOUSE,114,2
+339,339,S,Committee on the Judiciary,Subcommittee on the Constitution and Civil Justice,HOUSE,114,1
+340,340,S,Committee on Transportation and Infrastructure,"Subcommittee on Railroads, Pipelines, and Hazardous Materials",HOUSE,114,2
+341,341,S,Committee on Ways and Means,Subcommittee on Health,HOUSE,114,2
+342,342,L,Select Committee on the Events Surrounding the 2012 Terrorist Attack in Benghazi Benghazi,Subcommittee on Health,HOUSE,114,2
+343,343,S,Committee on Homeland Security and Governmental Affairs Homeland and Governmental Affairs,Subcommittee on Health,JOINT,114,1
+344,344,S,"Committee on Agriculture, Nutrition, and Forestry Agriculture",Subcommittee on Health,SENATE,114,1
+345,345,S,Committee on Appropriations Appropriations,Subcommittee on Health,SENATE,115,1
+346,346,S,Committee on Appropriations Appropriations,Subcommittee on Health,SENATE,114,2
+347,347,S,Committee on Indian Affairs Indian Affairs,Subcommittee on Health,SENATE,114,1
+348,348,S,Committee on Armed Services Armed Services,Subcommittee on Health,SENATE,114,2
+349,349,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Readiness and Management Support,SENATE,114,1
+350,350,S,"Committee on Commerce, Science, and Transportation","Subcommittee on Aviation Operations, Safety, and Security",SENATE,114,1
+351,351,S,Committee on Energy and Natural Resources Energy and Natural Resources,"Subcommittee on Space, Science, and Competitiveness",SENATE,114,1
+352,352,S,Committee on Environment and Public Works Environment and Public Works,Subcommittee on National Parks,SENATE,114,1
+353,353,S,Committee on Finance Finance,"Subcommittee on Fisheries, Water, and Wildlife",SENATE,114,2
+354,354,S,Committee on Foreign Relations Foreign Relations,Subcommittee on Health Care,SENATE,114,1
+355,355,S,"Committee on Health, Education, Labor, and Pensions HELP","Subcommittee on Multilateral International Development, Mutilateral, Institutions, and International Economic, Energy, and Environmental Policy",SENATE,114,1
+356,356,S,Committee on the Budget Budget,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,1
+357,357,S,Committee on Rules and Administration Rules and Administration,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,1
+358,358,S,Committee on Small Business and Entrepreneurship Small Business,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,2
+359,359,L,Committee on Special Committe on Aging senate-aging,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,2
+360,360,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,1
+361,361,S,Joint Economic Committee Economic,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,1
+362,362,J,Joint Economic Committee Economic,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,2
+363,363,L,Select Committee on Intelligence  senate-intelligence,Subcommittee on Regulatory Affairs and Federal Management,SENATE,114,1
+364,364,S,Committee on Agriculture Agriculture,Subcommittee on Regulatory Affairs and Federal Management,HOUSE,115,1
+365,365,S,Committee on Appropriations,"Subcommittee on the Departments of Transportation,",HOUSE,115,1
+366,366,S,Committee on Armed Services,Subcommittee on Tactical Air and Land Forces,HOUSE,115,1
+367,367,S,Committee on Armed Services armedservices,Subcommittee on Tactical Air and Land Forces,HOUSE,115,1
+368,368,S,Committee on Armed Services  Armed Services,Subcommittee on Oversight and Investigations,HOUSE,115,1
+369,369,S,Committee on Education and the Workforce Education and the Workforce,Subcommittee on Emerging Threats and Capabilities,HOUSE,115,1
+370,370,S,Committee on Energy and Commerce,Subcommittee on Communications and Technology,HOUSE,115,1
+371,371,S,Committee on Foreign Affairs Foreign Affairs,Subcommittee on Energy,HOUSE,115,1
+372,372,S,Committee on Homeland Security,Subcommittee on Transportation and Protective Security,HOUSE,115,1
+373,373,S,Committee on House Administration House Administration,Subcommittee on Cybersecurity and Infrastructure Protection,HOUSE,115,1
+374,374,S,Committee on Natural Resources,Subcommittee on Federal Lands,HOUSE,115,1
+375,375,S,Committee on Oversight and Government Reform,Subcommittee on National Security,HOUSE,115,1
+376,376,S,"Committee on Science, Space, and Technology Science, Space, and Technology",Subcommittee on Government Operations,HOUSE,115,1
+377,377,S,Committee on Small Business,"Subcommittee on Economic Growth, Tax, and Capital Access",HOUSE,115,1
+378,378,S,Committee on the Budget The Budget,"Subcommittees on Contracting and Workforce and Investigations, Oversight, and Regulations",HOUSE,115,1
+379,379,S,Committee on the Judiciary,Subcommittee on the Constitution and Civil Justice,HOUSE,115,1
+380,380,S,Committee on Transportation and Infrastructure,Subcommittee on Coast Guard and Maritime Transportation,HOUSE,115,1
+381,381,S,"Committee on Banking, Housing, and Urban Affairs Banking",Subcommittee on Coast Guard and Maritime Transportation,SENATE,115,1
+382,382,S,"Committee on Commerce, Science, and Transportation","Subcommittee on Aviation Operations, Safety, and Security",SENATE,115,1
+383,383,S,Committee on Energy and Natural Resources Energy and Natural Resources,"Subcommittee on Oceans, Atmosphere, Fisheries, and Coast Guard",SENATE,115,1
+384,384,S,Committee on Environment and Public Works,"Subcommittee on Fisheries, Water, and Wildlife",SENATE,115,1
+385,385,S,Committee on Foreign Relations Foreign Relations,Subcommittee on Transportation and Infrastructure,SENATE,115,1
+386,386,S,Committee on Homeland Security and Governmental Affairs,Subcommittee on Regulatory Affairs and Federal Management,SENATE,115,1
+387,387,S,Committee on Indian Affairs Indian Affairs,Subcommittee on Federal Spending Oversight and Emergency Management,SENATE,115,1
+388,388,S,Committee on Intelligence Intelligence,Subcommittee on Federal Spending Oversight and Emergency Management,SENATE,115,1
+389,389,S,Committee on Small Business and Entrepreneurship Small Business,Subcommittee on Federal Spending Oversight and Emergency Management,SENATE,115,1
+390,390,S,Committee on the Budget Budget,Subcommittee on Federal Spending Oversight and Emergency Management,SENATE,115,1
+391,391,S,Committee on Veterans' Affairs Veterans' Affairs,Subcommittee on Federal Spending Oversight and Emergency Management,SENATE,115,1
+392,392,S,Joint Economic Committee Economic,Subcommittee on Federal Spending Oversight and Emergency Management,SENATE,115,1
