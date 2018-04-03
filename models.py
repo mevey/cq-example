@@ -34,13 +34,13 @@ class Committee(Base):
     """
     __tablename__ = 'committee'
     committee_id = Column(Integer, primary_key=True)
-    subcommittee_id = Column(Integer)
-    committee_type = Column(Text)
+    subcommitee_id = Column(Integer) #TODO: correct spelling of subcomittee.
+    type = Column(Text)
     committee_name = Column(Text)
     subcommittee_name = Column(Text)
     chamber = Column(Text)
     congress_session = Column(Text)
     committee_session = Column(Text)
-    help_id = Column(Text)
+    #help_id = Column(Text)
 
 
