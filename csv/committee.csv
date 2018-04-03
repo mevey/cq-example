@@ -1,4 +1,4 @@
-committee_id,subcommitee_id,type,committee_name,subcommittee_name,chamber,congress_session,committee_session
+committee_id,subcommittee_id,type,committee_name,subcommittee_name,chamber,congress_session,committee_session
 1,1,S,Committee on Appropriations,Subcommittee on the Department of the Interior and Related Agencies,HOUSE,105,1
 2,2,S,Committee on Banking and Financial Services,"Subcommittee on Capital Markets, Securities and Government Sponsored Enterprises",HOUSE,105,1
 3,3,S,Committee on Commerce,Subcommittee on Health and Environment and Oversight and Investigations,HOUSE,105,2
