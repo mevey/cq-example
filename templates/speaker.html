@@ -1,10 +1,7 @@
-<html>
-<head>
-	<!-- load the bootstrap css here -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-	<div class="container">
+{% include "header.html" %}
+ <!-- Page Content -->
+<div id="page-content-wrapper">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
 				<h1>Capitol Query</h1>
@@ -33,7 +30,7 @@
 				<button style="width:100%;" class="btn btn-default" id="download-btn"><b>Download</b></button>
 			</div>
 		</div>
-		
+
 		<br>
 		<div class="row">
 			<div class="col-md-12 text-right">
@@ -72,10 +69,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- Load the javascript down here -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="static/js/main.js"></script>
-</body>
-
-
-</html>
+</div>
+<!-- /#page-content-wrapper -->
+{% include "footer.html" %}
