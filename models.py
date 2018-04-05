@@ -34,7 +34,7 @@ class Committee(Base):
     """
     __tablename__ = 'committee'
     committee_id = Column(Integer, primary_key=True)
-    subcommitee_id = Column(Integer) #TODO: correct spelling of subcomittee.
+    subcommittee_id = Column(Integer) #TODO: correct spelling of subcomittee.
     type = Column(Text)
     committee_name = Column(Text)
     subcommittee_name = Column(Text)

@@ -7,6 +7,9 @@
 body {
   overflow-x: hidden;
 }
+html, body {
+    height: 100%;
+}
 
 #wrapper {
   padding-left: 250px;
@@ -40,11 +43,13 @@ body {
   width: 100%;
   position: absolute;
   padding: 15px;
+  height:100%;
 }
 
 #wrapper #page-content-wrapper {
   position: absolute;
   margin-right: -250px;
+  height:100%;
 }
 
 
@@ -118,4 +123,14 @@ body {
     position: relative;
     margin-right: 0;
   }
+}
+.btn-primary {
+    background-color:#446CB3;
+}
+.cq-about {
+    height:700px;
+    margin:-20px -34px;
+}
+.cq-about p {
+    line-height:32px;
 }

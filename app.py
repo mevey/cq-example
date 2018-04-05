@@ -12,15 +12,9 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     committees = db_session.query(Committee).all()
-    return render_template('speaker.html')
+    return render_template('index.html', committees=committees)
 
-@app.route("/all")
-def all():
-    #takes care of the big query
-    committees = db_session.query(Committee).all() # or you could have used User.query.all()
-    return render_template('query.html', committees=committees)
-
-@app.route("/persom")
+@app.route("/person")
 def person():
     return render_template('person.html')
 
@@ -36,6 +30,9 @@ def district():
 def committee():
     return render_template('committee.html')
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5090, debug=True)
