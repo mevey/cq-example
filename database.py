@@ -3,8 +3,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-#engine = create_engine('sqlite:////opt/services/flaskapp/src/cq_small.sqlite')
-engine = create_engine('sqlite:///cq_small.sqlite')
+# engine = create_engine('sqlite:////opt/services/flaskapp/src/cq_small.sqlite') #run with docker
+engine = create_engine('sqlite:///cq_small.sqlite') #run with flask
 
 db_session = scoped_session(sessionmaker(autocommit=False,
                                          autoflush=False,
