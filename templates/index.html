@@ -9,39 +9,9 @@
 </div>
 <br clear="all">
 
-<form method="POST" action="/">
-	<div class="row">
-		<div class="col-md-3">
-			<input class="form-control" type="text" placeholder="Enter speaker surname" value="{{speaker}}" id="speaker"/>
-			<small>Try rubio, shinkman, murray, brown</small>
-		</div>
-		<div class="col-md-3">
-			<select name="committee_id" class="form-control" id="committee">
-				<option value="">All committees</option>
-				{% for committee in query.committees %}
-				<option value="{{committee.committee_id}}" {% if selected_committee == committee %}selected{%endif%}>{{committee.committee_name}}</option>
-				{% endfor %}
-			</select>
-			<small></small>
-		</div>
-		<div class="col-md-2">
-			<input type="text" id="district" class="form-control" placeholder="Enter a district"/>
-			<small></small>
-		</div>
-		<div class="col-md-2">
-			<select class="form-control" id="year">
-				<option value="">All parties</option>
-				{% for party in parties %}
-				<option value="{{year}}" {% if selected_year == year %}selected{%endif%}>{{year}}</option>
-				{% endfor %}
-			</select>
-			<small></small>
-		</div>
-		<div class="col-md-2">
-			<button style="width:100%;" class="btn btn-primary" id="filter-btn"><b>Filter</b></button>
-		</div>
-	</div>
-</form>
+<div>
+	{% include "query.html" %}
+</div>
 
 <br>
 <div>
