@@ -6,7 +6,7 @@ class Committee(Base):  # search by committee_name
     Committee
     """
     __tablename__ = 'committee'
-    committee_id = Column(Integer, primary_key=True)
+    committee_id = Column(Integer, primary_key=True, index=True)
     subcommittee_id = Column(Integer)
     type = Column(Text)
     committee_name = Column(Text)
@@ -21,7 +21,7 @@ class Person(Base):  # search by surname
     Person
     """
     __tablename__ = 'person'
-    person_id = Column(Integer, primary_key=True)
+    person_id = Column(Integer, primary_key=True, index=True)
     full_name = Column(Text)
     first_name = Column(Text)
     middle_name = Column(Text)
@@ -36,10 +36,25 @@ class Constituency(Base): #search by district
     Constituency
     """
     __tablename__ = 'constituency'
-    constituency_id = Column(Integer, primary_key=True)
+    constituency_id = Column(Integer, primary_key=True, index=True)
     state_name = Column(Text)
     state_abbreviation = Column(Text)
     district = Column(Text)
+
+
+class ConstituencyCharacteristics(Base):
+    """
+    Constituency_characteristics
+    """
+    __tablename__ = 'constituency_characteristics'
+    constituency_characteristics_id = Column(Integer, primary_key=True)
+    constituency_id = Column(Integer, index=True)
+    congress = Column(Integer)
+    census_district_id = Column(Integer)
+    land_sqm = Column(REAL)
+    population_total = Column(Integer)
+    population_per_sqm = Column(REAL)
+    density_quintile = Column(Integer)
 
 
 class Congressmember(Base):  #search by party
@@ -48,7 +63,7 @@ class Congressmember(Base):  #search by party
     """
     __tablename__ = 'congressmember'
     congressmember_id = Column(Integer, primary_key=True)
-    person_id = Column(Integer)
+    person_id = Column(Integer, index=True)
     party = Column(Text)
     chamber = Column(Text)
     constituency_id = Column(Integer)
@@ -59,8 +74,8 @@ class Hearing(Base): #get data -> based on committee
     Hearing
     """
     __tablename__ = 'hearing'
-    hearing_id = Column(Integer, primary_key=True)
-    committee_id = Column(Integer)
+    hearing_id = Column(Integer, primary_key=True, index=True)
+    committee_id = Column(Integer, index=True)
     subcommittee_id = Column(Integer)
     hearing_title = Column(Text)
     is_appropriation = Column(Text)
@@ -75,18 +90,18 @@ class Speech(Base): #get data -> based on hearing
     Speech
     """
     __tablename__ = 'speech'
-    speech_id = Column(Integer, primary_key=True)
+    speech_id = Column(Integer, primary_key=True, index=True)
     previous_speech_id = Column(Integer)
-    hearing_id = Column(Integer)
+    hearing_id = Column(Integer, index=True)
     conversation = Column(Integer)
     text = Column(Text)
 
 class Speaker(Base): #combines person to speech -> use to find speech based on person
     """
-    Speaker
+    Speakers
     """
-    __tablename__ = 'speaker'
+    __tablename__ = 'speakers'
     speaker_id = Column(Integer, primary_key=True)
-    speech_id = Column(Integer)
-    person_id = Column(Integer)
+    speech_id = Column(Integer, index=True)
+    person_id = Column(Integer, index=True)
     surname = Column(Text)
