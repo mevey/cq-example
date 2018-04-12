@@ -1,34 +1,60 @@
 <form method="POST" action="/">
-	<div class="row">
-		<div class="col-md-3">
-			<input name="surname" class="form-control" type="text" placeholder="Enter speaker surname" value="{{surname}}" id="speaker"/>
+	 <div class="row">
+		<div class="col-md-12">
+			<input name="surname" class="form-control" type="text" placeholder="Enter a name" value="{{surname}}" id="speaker"/>
 			<small>Try rubio, shinkman, murray, brown</small>
 		</div>
-		<div class="col-md-3">
-			<select name="committee" class="form-control" id="committee">
-			<option value="">All committees</option>
-			{% for committee in query.committees %}
-			<option value="{{committee.committee_id}}"
-					{% if selected_committee == committee%} selected="selected"{%endif%}>
-				{{committee.committee_name}}</option>
-			{% endfor %}
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="text" id="committee"  class="form-control" placeholder="Enter a committee name"/>
+			<small></small>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<select name="party" class="form-control" id="party">
+				<option value="">All parties</option>
+				<option value="D">Democrats</option>
+				<option value="I">Independents</option>
+				<option value="R">Republicans</option>
+				<option value="None">Unspecified</option>
 			</select>
 			<small></small>
 		</div>
-		<div class="col-md-2">
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<select name="party" class="form-control" id="state">
+				<option value="">All states</option>
+			</select>
+			<small></small>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
 			<input name="district" type="text" id="district" class="form-control" placeholder="Enter a district"/>
 			<small></small>
 		</div>
-		<div class="col-md-2">
-			<select name="party" class="form-control" id="party">
-				<option value="">All parties</option>
-				{% for cm in query.parties %}
-				<option value="{{cm.party}}">{{cm.party}}</option>
-				{% endfor %}
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<select name="year" class="form-control" id="year">
+				<option value="">All years</option>
 			</select>
 			<small></small>
 		</div>
-		<div class="col-md-2">
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<select name="quintile" class="form-control" id="quintile">
+				<option value="">All quintiles</option>
+			</select>
+			<small></small>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
 			<button style="width:100%;" class="btn btn-primary" id="filter-btn"><b>Filter</b></button>
 		</div>
 	</div>

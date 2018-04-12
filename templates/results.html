@@ -7,23 +7,36 @@
     <div class="col-md-12 text-center">
         <table class="table table-striped thead-dark">
             <thead class="text-center">
-            <td>Hearing Title</td>
-            <td>Date</td>
-            <td>Speaker</td>
-            <td>Speech</td>
+                <td>Honorific</td>
+                <td>Speaker</td>
+                <td>Speech</td>
+                <td>Hearing</td>
+                <td>Date</td>
+                <td>Committee </td>
+                <td>Committee Type</td>
+                <td>Party</td>
+                <td>Chamber</td>
+                <td>State</td>
+                <td>District</td>
+                <td>Density Quintile</td>
             </thead>
             <tbody>
             {% if (records is defined) and records %}
-                {% for data in records.data %}
-                    {% if loop.index <= 50 %}
-                        <tr>
-                            <td>{{data.hearing_title}}</td>
-                            <td>{{data.date}}</td>
-                            <td>{{data.surname}}</td>
-                            <!-- This line shows just the first 100 characters and cuts it after that -->
-                            <td>{{data.text[0:100] + " ..."}}</td>
-                        </tr>
-                    {% endif %}
+                {% for record in records.data %}
+                    <tr>
+                        <td>{{record.honorific}}</td>
+                        <td>{{record.surname | title}}</td>
+                        <td>{{record.text[0:100] + " ..."}}</td>
+                        <td>{{record.hearing_title | title}}</td>
+                        <td>{{record.date}}</td>
+                        <td>{{record.committee_name}}</td>
+                        <td>{{record.type}}</td>
+                        <td>{{record.party}}</td>
+                        <td>{{record.chamber}}</td>
+                        <td>{{record.state_name}}</td>
+                        <td>{{record.district}}</td>
+                        <td>{{record.density_quintile}}</td>
+                    </tr>
                 {% endfor %}
             {% else %}
             <tr>
@@ -33,7 +46,7 @@
             </tbody>
         </table>
         <hr>
-        <p>Sneek peak of the first 50 items of what you will download</p>
+        <p>Sneek peak of the first 10 items of what you will download</p>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
