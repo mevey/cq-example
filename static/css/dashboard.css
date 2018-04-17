@@ -135,9 +135,11 @@ html, body {
     line-height:32px;
 }
 #sidebar-filters {
-    margin-top:100px;
     padding:20px;
 }
 #sidebar-filters .row {
     margin-top:20px;
+}
+.brand {
+    padding:20px 20px 0px 20px;
 }

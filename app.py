@@ -24,9 +24,16 @@ class Records():
         self.no_of_records = 0#len(data)
 
 
-def get_committee_query(committee_name, name, party, district, state, year, quintile):
+def get_records(committee_name, name, party, chamber, district, state, year, quintile):
 
-    data = db_session.query(Hearing, Speech, Speaker, Person, Committee,  Congressmember, Constituency, ConstituencyCharacteristics)
+    data = db_session.query(Speech)\
+                    .join(Hearing, Hearing.hearing_id == Speech.hearing_id)\
+                    .join(Speaker, Speech.speech_id == Speaker.speech_id)\
+                    .join(Congressmember, Speaker.person_id == Congressmember.person_id, isouter=True)\
+                    .join(Committee, Committee.committee_id == Hearing.committee_id, isouter=True)\
+                    .join(Person, Person.person_id == Speaker.person_id)\
+                    .join(Constituency, Constituency.constituency_id == Congressmember.constituency_id, isouter=True)\
+                    .join(ConstituencyCharacteristics, ConstituencyCharacteristics.constituency_id == Constituency.constituency_id, isouter=True)
 
     if committee_name:
         data = data.filter(Committee.committee_name == committee_name)
@@ -37,6 +44,9 @@ def get_committee_query(committee_name, name, party, district, state, year, quin
 
     if party:
         data = data.filter(Congressmember.party == party)
+
+    if chamber:
+        data = data.filter(Congressmember.chamber == chamber)
 
     if year:
         data = data.filter(Hearing.date == year)
@@ -49,16 +59,6 @@ def get_committee_query(committee_name, name, party, district, state, year, quin
 
     if quintile:
         data = data.filter(ConstituencyCharacteristics.density_quintile == quintile)
-
-    data = data.filter(Hearing.hearing_id == Speech.hearing_id)
-    data = data.filter(Speech.speech_id == Speaker.speech_id)
-    data = data.filter(Speaker.person_id == Congressmember.person_id)
-    data = data.filter(Committee.committee_id == Hearing.committee_id)
-    data = data.filter(Person.person_id == Speaker.person_id)
-    data = data.filter(Congressmember.person_id == Person.person_id)
-    data = data.filter(Constituency.constituency_id == Congressmember.constituency_id)
-    data = data.filter(ConstituencyCharacteristics.constituency_id == Constituency.constituency_id)
-
 
     data = data.with_entities(
         Hearing.hearing_title,
@@ -79,6 +79,44 @@ def get_committee_query(committee_name, name, party, district, state, year, quin
 
     return data
 
+def get_count(committee_name, name, party, chamber, district, state, year, quintile):
+
+    data = db_session.query(Speech)\
+                    .join(Hearing, Hearing.hearing_id == Speech.hearing_id)\
+                    .join(Speaker, Speech.speech_id == Speaker.speech_id)\
+                    .join(Congressmember, Speaker.person_id == Congressmember.person_id, isouter=True)\
+                    .join(Committee, Committee.committee_id == Hearing.committee_id, isouter=True)\
+                    .join(Person, Person.person_id == Speaker.person_id)\
+                    .join(Constituency, Constituency.constituency_id == Congressmember.constituency_id, isouter=True)\
+                    .join(ConstituencyCharacteristics, ConstituencyCharacteristics.constituency_id == Constituency.constituency_id, isouter=True)
+
+    if committee_name:
+        data = data.filter(Committee.committee_name == committee_name)
+
+    if name:
+        name = name.lower()
+        data = data.filter(Person.full_name.like("%"+ name +"%"))
+
+    if party:
+        data = data.filter(Congressmember.party == party)
+
+    if chamber:
+        data = data.filter(Congressmember.chamber == chamber)
+
+    if year:
+        data = data.filter(Hearing.date == year)
+
+    if district:
+        data = data.filter(Constituency.district == district)
+
+    if state:
+        data = data.filter(Constituency.state_name == state)
+
+    if quintile:
+        data = data.filter(ConstituencyCharacteristics.density_quintile == quintile)
+
+    return data.count()
+
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
@@ -88,11 +126,14 @@ def index():
     committee_name = request.form.get('committee',"")
     name = request.form.get('name',"")
     party = request.form.get('party')
+    chamber = request.form.get('chamber')
     district = request.form.get('district')
     state = request.form.get('state')
     year = request.form.get('year')
     quintile = request.form.get('quintile')
-    records.update_data(get_committee_query(committee_name, name, party, district, state, year, quintile))
+
+    records.update_data(get_records(committee_name, name, party, chamber, district, state, year, quintile))
+    count = get_count(committee_name, name, party,chamber, district, state, year, quintile)
 
     selected = {
             "committee_name": committee_name,
@@ -103,7 +144,8 @@ def index():
             "year": year,
             "quintile": quintile,
         }
-    return render_template('index.html', query=query, records=records, selected = selected)
+    years = [str(x) for x in range(2018, 1997, -1)]
+    return render_template('index.html', query=query, records=records, selected=selected, count=count, years=years)
 
 @app.route("/about")
 def about():

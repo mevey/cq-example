@@ -2,7 +2,7 @@
 	 <div class="row">
 		<div class="col-md-12">
 			<input name="name" class="form-control" type="text" placeholder="Enter a name" value="{{selected.name}}" id="speaker"/>
-			<small>Try rubio, shinkman, murray, brown</small>
+			<small>Try Rubio, Sanders, Menendez</small>
 		</div>
 	</div>
 	<div class="row">
@@ -27,6 +27,61 @@
 		<div class="col-md-8">
 			<select name="party" class="form-control" id="state">
 				<option value="">All states</option>
+				<option>Alaska</option>
+				<option>Alabama</option>
+				<option>Arkansas</option>
+				<option>American Samoa</option>
+				<option>Arizona</option>
+				<option>California</option>
+				<option>Colorado</option>
+				<option>Connecticut</option>
+				<option>District of Columbia</option>
+				<option>Delaware</option>
+				<option>Florida</option>
+				<option>Georgia</option>
+				<option>Guam</option>
+				<option>Hawaii</option>
+				<option>Iowa</option>
+				<option>Idaho</option>
+				<option>Illinois</option>
+				<option>Indiana</option>
+				<option>Kansas</option>
+				<option>Kentucky</option>
+				<option>Louisiana</option>
+				<option>Massachusetts</option>
+				<option>Maryland</option>
+				<option>Maine</option>
+				<option>Michigan</option>
+				<option>Minnesota</option>
+				<option>Missouri</option>
+				<option>Northern Mariana Islands</option>
+				<option>Mississippi</option>
+				<option>Montana</option>
+				<option>North Carolina</option>
+				<option>North Dakota</option>
+				<option>Nebraska</option>
+				<option>New Hampshire</option>
+				<option>New Jersey</option>
+				<option>New Mexico</option>
+				<option>Nevada</option>
+				<option>New York</option>
+				<option>Ohio</option>
+				<option>Oklahoma</option>
+				<option>Oregon</option>
+				<option>Pennsylvania</option>
+				<option>Rhode Island</option>
+				<option>South Carolina</option>
+				<option>South Dakota</option>
+				<option>Tennessee</option>
+				<option>Texas</option>
+				<option>Utah</option>
+				<option>Virginia</option>
+				<option>US Virgin Islands</option>
+				<option>Vermont</option>
+				<option>Washington</option>
+				<option>Wisconsin</option>
+				<option>West Virginia</option>
+				<option>Wyoming</option>
 			</select>
 			<small></small>
 		</div>
@@ -38,9 +93,22 @@
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-md-8">
+			<select name="quintile" class="form-control" id="chamber">
+				<option value="">Both chambers</option>
+				<option value="S">Senate</option>
+				<option value="H">House</option>
+			</select>
+			<small></small>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-md-6">
 			<select name="year" class="form-control" id="year">
 				<option value="">All years</option>
+				{% for year in years %}
+				<option value="{{year}}">{{year}}</option>
+				{% endfor %}
 			</select>
 			<small></small>
 		</div>
@@ -48,14 +116,19 @@
 	<div class="row">
 		<div class="col-md-8">
 			<select name="quintile" class="form-control" id="quintile">
-				<option value="">All quintiles</option>
+				<option value="">Population density</option>
+				<option value="5">Large City</option>
+				<option value="4">Medium City</option>
+				<option value="3">Small City</option>
+				<option value="2">Town</option>
+				<option value="1">Rural</option>
 			</select>
 			<small></small>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<button style="width:100%;" class="btn btn-primary" id="filter-btn"><b>Filter</b></button>
+			<button style="width:100%;" class="btn btn-primary" id="filter-btn"><b>Query</b></button>
 		</div>
 	</div>
 </form>
