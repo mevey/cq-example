@@ -1,18 +1,18 @@
 <form method="POST" action="/">
 	 <div class="row">
 		<div class="col-md-12">
-			<input name="surname" class="form-control" type="text" placeholder="Enter a name" value="{{surname}}" id="speaker"/>
+			<input name="name" class="form-control" type="text" placeholder="Enter a name" value="{{selected.name}}" id="speaker"/>
 			<small>Try rubio, shinkman, murray, brown</small>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<input type="text" id="committee"  class="form-control" placeholder="Enter a committee name"/>
+			<input type="text" id="committee"  class="form-control" placeholder="Enter a committee name" value="{{selected.committee_name}}"/>
 			<small></small>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-8">
 			<select name="party" class="form-control" id="party">
 				<option value="">All parties</option>
 				<option value="D">Democrats</option>
@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-8">
 			<select name="party" class="form-control" id="state">
 				<option value="">All states</option>
 			</select>
@@ -32,13 +32,13 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<input name="district" type="text" id="district" class="form-control" placeholder="Enter a district"/>
 			<small></small>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<select name="year" class="form-control" id="year">
 				<option value="">All years</option>
 			</select>
@@ -46,7 +46,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-8">
 			<select name="quintile" class="form-control" id="quintile">
 				<option value="">All quintiles</option>
 			</select>

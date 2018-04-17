@@ -24,16 +24,16 @@ class Records():
         self.no_of_records = 0#len(data)
 
 
-def get_committee_query(committee_name, surname, party, district, state, year, quintile):
+def get_committee_query(committee_name, name, party, district, state, year, quintile):
 
     data = db_session.query(Hearing, Speech, Speaker, Person, Committee,  Congressmember, Constituency, ConstituencyCharacteristics)
 
     if committee_name:
         data = data.filter(Committee.committee_name == committee_name)
 
-    if surname:
-        surname = surname.lower()
-        data = data.filter(Speaker.surname == surname) #Note.message.like("%somestr%")
+    if name:
+        name = name.lower()
+        data = data.filter(Person.full_name.like("%"+ name +"%"))
 
     if party:
         data = data.filter(Congressmember.party == party)
@@ -85,16 +85,25 @@ def index():
     query = Query()
     records = Records()
 
-    committee_name = request.form.get('committee')
-    surname = request.form.get('surname')
+    committee_name = request.form.get('committee',"")
+    name = request.form.get('name',"")
     party = request.form.get('party')
     district = request.form.get('district')
     state = request.form.get('state')
     year = request.form.get('year')
     quintile = request.form.get('quintile')
-    records.update_data(get_committee_query(committee_name, surname, party, district, state, year, quintile))
+    records.update_data(get_committee_query(committee_name, name, party, district, state, year, quintile))
 
-    return render_template('index.html', query=query, records=records)
+    selected = {
+            "committee_name": committee_name,
+            "name": name,
+            "party": party,
+            "district": district,
+            "state": state,
+            "year": year,
+            "quintile": quintile,
+        }
+    return render_template('index.html', query=query, records=records, selected = selected)
 
 @app.route("/about")
 def about():

@@ -1,4 +1,10 @@
 <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <button style="width:100%;" class="btn btn-default" id="download-btn"><b>Download</b></button>
+    </div>
+</div>
+<div class="row">
 	<div class="col-md-12 text-right">
 		<b>{{records.no_of_records}} speeches</b>
 	</div>
@@ -24,8 +30,8 @@
             {% if (records is defined) and records %}
                 {% for record in records.data %}
                     <tr>
-                        <td>{{record.honorific}}</td>
-                        <td>{{record.surname | title}}</td>
+                        <td>{% if record.honorific %}{{record.honorific}} {% else %} {% endif %}</td>
+                        <td>{{record.full_name | title}}</td>
                         <td>{{record.text[0:100] + " ..."}}</td>
                         <td>{{record.hearing_title | title}}</td>
                         <td>{{record.date}}</td>
@@ -47,11 +53,5 @@
         </table>
         <hr>
         <p>Sneek peak of the first 10 items of what you will download</p>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <button style="width:100%;" class="btn btn-default" id="download-btn"><b>Download</b></button>
-            </div>
-        </div>
     </div>
 </div>

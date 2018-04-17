@@ -11,7 +11,7 @@
 //	//You could optionally work with Ajax
 //	window.location.href="/speakers?name=" + $("#speaker").val() + "&year=" + $("#year").val()
 //});
-
-$('#download-btn').click(function() {
-	window.location.href="/speakers?format=csv&name=" + $("#speaker").val() + "&year=" + $("#year").val()
-});
+//
+//$('#download-btn').click(function() {
+//	window.location.href="/speakers?format=csv&name=" + $("#speaker").val() + "&year=" + $("#year").val()
+//});
