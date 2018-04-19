@@ -128,3 +128,6 @@ class CapitolQuery(Base):
     district = Column(Text)
     state_name = Column(Text)
     density_quintile = Column(Integer)
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

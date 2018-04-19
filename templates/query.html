@@ -1,13 +1,13 @@
-<form method="POST" action="/">
+<form method="POST" action="/records" id="queryform">
 	 <div class="row">
 		<div class="col-md-12">
-			<input name="name" class="form-control" type="text" placeholder="Enter a name" value="" id="speaker"/>
+			<input name="name" class="form-control" type="text" placeholder="Search by name" value="" id="speaker"/>
 			<small>Try Rubio, Sanders, Menendez</small>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<input type="text" id="committee"  class="form-control" placeholder="Enter a committee name" value=""/>
+			<input type="text" id="committee"  class="form-control" placeholder="Search by committee" value=""/>
 			<small></small>
 		</div>
 	</div>
@@ -87,8 +87,8 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
-			<input name="district" type="text" id="district" class="form-control" placeholder="Enter a district"/>
+		<div class="col-md-8">
+			<input name="district" type="text" id="district" class="form-control" placeholder="Search by district"/>
 			<small></small>
 		</div>
 	</div>
@@ -126,9 +126,9 @@
 			<small></small>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<button style="width:100%;" class="btn btn-primary" id="filter-btn"><b>Query</b></button>
-		</div>
-	</div>
 </form>
+<div class="row">
+	<div class="col-md-12">
+		<button style="width:100%;" class="btn btn-primary" id="filter-btn"><b>Query</b></button>
+	</div>
+</div>

@@ -46,3 +46,12 @@ FROM
 #Create the table column and update it with the year value
 ALTER TABLE capitolquery ADD year INT;
 update capitolquery set year=substr(date, 0, 5);
+
+#create indexes
+CREATE INDEX cq_year ON capitolquery (year);
+CREATE INDEX cq_density_quintile ON capitolquery (density_quintile);
+CREATE INDEX cq_district ON capitolquery (district);
+CREATE INDEX cq_party ON capitolquery (party);
+CREATE INDEX cq_chamber ON capitolquery (chamber);
+CREATE INDEX cq_state_name ON capitolquery (state_name);
+CREATE INDEX cq_hearing_title ON capitolquery (hearing_title);

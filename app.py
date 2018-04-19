@@ -2,93 +2,79 @@ import datetime
 import os
 
 from flask import Flask, render_template, redirect, url_for, request, jsonify
-from models import Committee, Hearing, Speech, Speaker, Congressmember, Constituency, Person, ConstituencyCharacteristics,CapitolQuery
+from models import CapitolQuery
 from database import db_session
+from sqlalchemy import func, inspect
 
 app = Flask(__name__)
-# app.secret_key = os.environ['APP_SECRET_KEY']
 
-class Query():
-    def __init__(self):
-        self.committees = None
-        self.parties = None
-        self.data = []
 
-class Records():
-    def __init__(self):
-        self.no_of_records = 0
-        self.data = []
+def object_as_dict(obj):
+    for c in inspect(obj)._entities:
+        print(dir(c))
+        break
 
-    def update_data(self, data):
-        self.data = data
-        self.no_of_records = 0#len(data)
-
+    return {c.key: getattr(obj, c.key)
+            for c in inspect(obj)._entities}
 
 def get_records(committee_name, name, party, chamber, district, state, year, quintile):
-
-    data = db_session.query(Speech)\
-                    .join(Hearing, Hearing.hearing_id == Speech.hearing_id)\
-                    .join(Speaker, Speech.speech_id == Speaker.speech_id)\
-                    .join(Congressmember, Speaker.person_id == Congressmember.person_id, isouter=True)\
-                    .join(Committee, Committee.committee_id == Hearing.committee_id, isouter=True)\
-                    .join(Person, Person.person_id == Speaker.person_id)\
-                    .join(Constituency, Constituency.constituency_id == Congressmember.constituency_id, isouter=True)\
-                    .join(ConstituencyCharacteristics, ConstituencyCharacteristics.constituency_id == Constituency.constituency_id, isouter=True)
-
-    if committee_name:
-        data = data.filter(Committee.committee_name == committee_name)
-
-    if name:
-        name = name.lower()
-        data = data.filter(Person.full_name.like("%"+ name +"%"))
-
-    if party:
-        data = data.filter(Congressmember.party == party)
-
-    if chamber:
-        data = data.filter(Congressmember.chamber == chamber)
-
-    if year:
-        data = data.filter(Hearing.date.like("%"+ year +"%"))
-
-    if district:
-        data = data.filter(Constituency.district == district)
-
-    if state:
-        data = data.filter(Constituency.state_name == state)
-
-    if quintile:
-        data = data.filter(ConstituencyCharacteristics.density_quintile == quintile)
-
-    data = data.with_entities(
-        Hearing.hearing_title,
-        Hearing.date,
-        Hearing.url,
-        Speaker.surname,
-        Speech.text,
-        Person.full_name,
-        Person.honorific,
-        Committee.committee_name,
-        Committee.type,
-        Congressmember.party,
-        Congressmember.chamber,
-        Constituency.district,
-        Constituency.state_name,
-        ConstituencyCharacteristics.density_quintile
-    ).limit(10)
-    print(data.statement)
-    return data
-
-def get_records_one_table(committee_name, name, party, chamber, district, state, year, quintile):
 
     data = db_session.query(CapitolQuery)
 
     if committee_name:
-        data = data.filter(CapitolQuery.committee_name == committee_name)
+        data = data.filter(CapitolQuery.committee_name == committee_name.strip())
 
     if name:
         name = name.lower()
-        data = data.filter(CapitolQuery.full_name.like("%"+ name +"%"))
+        data = data.filter(CapitolQuery.full_name.like("%"+ name.strip() +"%"))
+
+    if party:
+        data = data.filter(CapitolQuery.party == party)
+
+    if chamber:
+        data = data.filter(CapitolQuery.chamber == chamber)
+
+    if year:
+        data = data.filter(CapitolQuery.year == year)
+
+    if district:
+        data = data.filter(CapitolQuery.district == district)
+
+    if state:
+        data = data.filter(CapitolQuery.state_name == state)
+
+    if quintile:
+        print("_" * 30)
+        print(quintile)
+        data = data.filter(CapitolQuery.density_quintile == int(quintile))
+
+    data = data.with_entities(
+        CapitolQuery.honorific,
+        CapitolQuery.full_name,
+        CapitolQuery.text,
+        CapitolQuery.hearing_title,
+        CapitolQuery.date,
+        CapitolQuery.committee_name,
+        CapitolQuery.type,
+        CapitolQuery.party,
+        CapitolQuery.chamber,
+        CapitolQuery.state_name,
+        CapitolQuery.district,
+        CapitolQuery.density_quintile
+    ).limit(10)
+    print(data.statement)
+    return data.all()
+
+def get_count(committee_name, name, party, chamber, district, state, year, quintile):
+
+    data = db_session.query(func.count(CapitolQuery.id))
+
+    if committee_name:
+        data = data.filter(CapitolQuery.committee_name == committee_name.strip())
+
+    if name:
+        name = name.lower()
+        data = data.filter(CapitolQuery.full_name.like("%"+ name.strip() +"%"))
 
     if party:
         data = data.filter(CapitolQuery.party == party)
@@ -107,64 +93,7 @@ def get_records_one_table(committee_name, name, party, chamber, district, state,
 
     if quintile:
         data = data.filter(CapitolQuery.density_quintile == quintile)
-
-    data = data.with_entities(
-        CapitolQuery.hearing_title,
-        CapitolQuery.date,
-        CapitolQuery.url,
-        CapitolQuery.surname,
-        CapitolQuery.text,
-        CapitolQuery.full_name,
-        CapitolQuery.honorific,
-        CapitolQuery.committee_name,
-        CapitolQuery.type,
-        CapitolQuery.party,
-        CapitolQuery.chamber,
-        CapitolQuery.district,
-        CapitolQuery.state_name,
-        CapitolQuery.density_quintile
-    ).limit(10)
-    print(data.statement)
-    return data
-
-def get_count(committee_name, name, party, chamber, district, state, year, quintile):
-
-    data = db_session.query(Speech)\
-                    .join(Hearing, Hearing.hearing_id == Speech.hearing_id)\
-                    .join(Speaker, Speech.speech_id == Speaker.speech_id)\
-                    .join(Congressmember, Speaker.person_id == Congressmember.person_id, isouter=True)\
-                    .join(Committee, Committee.committee_id == Hearing.committee_id, isouter=True)\
-                    .join(Person, Person.person_id == Speaker.person_id)\
-                    .join(Constituency, Constituency.constituency_id == Congressmember.constituency_id, isouter=True)\
-                    .join(ConstituencyCharacteristics, ConstituencyCharacteristics.constituency_id == Constituency.constituency_id, isouter=True)
-
-    if committee_name:
-        data = data.filter(Committee.committee_name == committee_name)
-
-    if name:
-        name = name.lower()
-        data = data.filter(Person.full_name.like("%"+ name +"%"))
-
-    if party:
-        data = data.filter(Congressmember.party == party)
-
-    if chamber:
-        data = data.filter(Congressmember.chamber == chamber)
-
-    if year:
-        data = data.filter(Hearing.date == year)
-
-    if district:
-        data = data.filter(Constituency.district == district)
-
-    if state:
-        data = data.filter(Constituency.state_name == state)
-
-    if quintile:
-        data = data.filter(ConstituencyCharacteristics.density_quintile == quintile)
-
-    return data.count()
-
+    return data.all()
 
 @app.route("/")
 def index():
@@ -172,10 +101,8 @@ def index():
     return render_template('index.html', years=years)
 
 @app.route("/records", methods=['GET', 'POST'])
-def get_records():
-    query = Query()
-    records = Records()
-
+def records():
+    print(request.form.get("quintile"))
     committee_name = request.form.get('committee',"")
     name = request.form.get('name',"")
     party = request.form.get('party')
@@ -185,10 +112,16 @@ def get_records():
     year = request.form.get('year')
     quintile = request.form.get('quintile')
 
-    records = get_records_one_table(committee_name, name, party, chamber, district, state, year, quintile)
+    s = datetime.datetime.now()
+    records = get_records(committee_name, name, party, chamber, district, state, year, quintile)
+    e = datetime.datetime.now()
+    print((e-s).total_seconds())
+    s = datetime.datetime.now()
     count = get_count(committee_name, name, party,chamber, district, state, year, quintile)
+    e = datetime.datetime.now()
+    print((e - s).total_seconds())
 
-    return jsonify(records=records, count=count)
+    return jsonify( records = list(records), count=count)
 
 @app.route("/about")
 def about():
