@@ -116,7 +116,7 @@ def records():
     e = datetime.datetime.now()
     print((e-s).total_seconds())
     s = datetime.datetime.now()
-    count = get_count(committee_name, name, party,chamber, district, state, year, quintile)
+    count = 0#get_count(committee_name, name, party,chamber, district, state, year, quintile)
     e = datetime.datetime.now()
     print((e - s).total_seconds())
 
