@@ -102,7 +102,6 @@ def index():
 
 @app.route("/records", methods=['GET', 'POST'])
 def records():
-    print(request.form.get("quintile"))
     committee_name = request.form.get('committee',"")
     name = request.form.get('name',"")
     party = request.form.get('party')
