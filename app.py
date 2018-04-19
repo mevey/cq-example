@@ -166,8 +166,13 @@ def get_count(committee_name, name, party, chamber, district, state, year, quint
     return data.count()
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def index():
+    years = [str(x) for x in range(2018, 1996, -1)]
+    return render_template('index.html', years=years)
+
+@app.route("/records", methods=['GET', 'POST'])
+def get_records():
     query = Query()
     records = Records()
 
@@ -180,21 +185,10 @@ def index():
     year = request.form.get('year')
     quintile = request.form.get('quintile')
 
-    records.update_data(get_records_one_table(committee_name, name, party, chamber, district, state, year, quintile))
+    records = get_records_one_table(committee_name, name, party, chamber, district, state, year, quintile)
     count = get_count(committee_name, name, party,chamber, district, state, year, quintile)
 
-    selected = {
-            "committee_name": committee_name,
-            "name": name,
-            "party": party,
-            "district": district,
-            "state": state,
-            "year": year,
-            "chamber": chamber,
-            "quintile": quintile,
-        }
-    years = [str(x) for x in range(2018, 1996, -1)]
-    return render_template('index.html', query=query, records=records, selected=selected, count=count, years=years)
+    return jsonify(records=records, count=count)
 
 @app.route("/about")
 def about():
