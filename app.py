@@ -49,7 +49,7 @@ def get_records(committee_name, name, party, chamber, district, state, year, qui
         data = data.filter(Congressmember.chamber == chamber)
 
     if year:
-        data = data.filter(Hearing.date == year)
+        data = data.filter(Hearing.date.like("%"+ year +"%"))
 
     if district:
         data = data.filter(Constituency.district == district)
@@ -76,7 +76,7 @@ def get_records(committee_name, name, party, chamber, district, state, year, qui
         Constituency.state_name,
         ConstituencyCharacteristics.density_quintile
     ).limit(10)
-
+    print(data.statement)
     return data
 
 def get_count(committee_name, name, party, chamber, district, state, year, quintile):
