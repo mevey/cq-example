@@ -193,7 +193,7 @@ def index():
             "chamber": chamber,
             "quintile": quintile,
         }
-    years = [str(x) for x in range(2018, 1997, -1)]
+    years = [str(x) for x in range(2018, 1996, -1)]
     return render_template('index.html', query=query, records=records, selected=selected, count=count, years=years)
 
 @app.route("/about")
