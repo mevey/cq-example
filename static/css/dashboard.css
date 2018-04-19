@@ -143,3 +143,6 @@ html, body {
 .brand {
     padding:20px 20px 0px 20px;
 }
+.results {
+    overflow:scroll;
+}

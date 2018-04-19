@@ -1,0 +1,48 @@
+CREATE TABLE capitolquery(
+  id INT, 
+  hearing_title TEXT,
+  date TEXT,
+  url TEXT,
+  surname TEXT,
+  text TEXT,
+  full_name TEXT,
+  honorific TEXT,
+  committee_name TEXT,
+  type TEXT,
+  party TEXT,
+  chamber TEXT,
+  district TEXT,
+  state_name TEXT,
+  density_quintile INT
+  );
+
+INSERT INTO capitolquery  
+SELECT 
+	Distinct(speech.speech_id),
+	hearing.hearing_title,
+	hearing.date,
+	hearing.url,
+	speakers.surname,
+	speech.text,
+	person.full_name,
+	person.honorific,
+	committee.committee_name,
+	committee.type,
+	congressmember.party,
+	congressmember.chamber,
+	constituency.district,
+	constituency.state_name,
+	constituency_characteristics.density_quintile 
+FROM 
+	speech INNER JOIN hearing ON hearing.hearing_id = speech.hearing_id 
+	INNER JOIN speakers ON speech.speech_id = speakers.speech_id 
+	LEFT OUTER JOIN congressmember ON speakers.person_id = congressmember.person_id
+	LEFT OUTER JOIN committee ON committee.committee_id = hearing.committee_id 
+	INNER JOIN person ON person.person_id = speakers.person_id 
+	LEFT OUTER JOIN constituency ON constituency.constituency_id = congressmember.constituency_id 
+	LEFT OUTER JOIN constituency_characteristics ON constituency_characteristics.constituency_id = constituency.constituency_id;
+
+
+#Create the table column and update it with the year value
+ALTER TABLE capitolquery ADD year INT;
+update capitolquery set year=substr(date, 0, 5);

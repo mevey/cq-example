@@ -105,3 +105,26 @@ class Speaker(Base): #combines person to speech -> use to find speech based on p
     speech_id = Column(Integer, index=True)
     person_id = Column(Integer, index=True)
     surname = Column(Text)
+
+class CapitolQuery(Base):
+    """
+    CapitolQuery
+    """
+    __tablename__ = 'capitolquery'
+
+    id = Column(Integer, primary_key=True)
+    hearing_title = Column(Text)
+    date = Column(Text)
+    year = Column(Integer)
+    url = Column(Text)
+    surname = Column(Text)
+    text = Column(Text)
+    full_name = Column(Text)
+    honorific = Column(Text)
+    committee_name = Column(Text)
+    type = Column(Text)
+    party = Column(Text)
+    chamber = Column(Text)
+    district = Column(Text)
+    state_name = Column(Text)
+    density_quintile = Column(Integer)

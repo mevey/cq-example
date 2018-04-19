@@ -2,7 +2,7 @@ import datetime
 import os
 
 from flask import Flask, render_template, redirect, url_for, request, jsonify
-from models import Committee, Hearing, Speech, Speaker, Congressmember, Constituency, Person, ConstituencyCharacteristics
+from models import Committee, Hearing, Speech, Speaker, Congressmember, Constituency, Person, ConstituencyCharacteristics,CapitolQuery
 from database import db_session
 
 app = Flask(__name__)
@@ -79,6 +79,54 @@ def get_records(committee_name, name, party, chamber, district, state, year, qui
     print(data.statement)
     return data
 
+def get_records_one_table(committee_name, name, party, chamber, district, state, year, quintile):
+
+    data = db_session.query(CapitolQuery)
+
+    if committee_name:
+        data = data.filter(CapitolQuery.committee_name == committee_name)
+
+    if name:
+        name = name.lower()
+        data = data.filter(CapitolQuery.full_name.like("%"+ name +"%"))
+
+    if party:
+        data = data.filter(CapitolQuery.party == party)
+
+    if chamber:
+        data = data.filter(CapitolQuery.chamber == chamber)
+
+    if year:
+        data = data.filter(CapitolQuery.year == year)
+
+    if district:
+        data = data.filter(CapitolQuery.district == district)
+
+    if state:
+        data = data.filter(CapitolQuery.state_name == state)
+
+    if quintile:
+        data = data.filter(CapitolQuery.density_quintile == quintile)
+
+    data = data.with_entities(
+        CapitolQuery.hearing_title,
+        CapitolQuery.date,
+        CapitolQuery.url,
+        CapitolQuery.surname,
+        CapitolQuery.text,
+        CapitolQuery.full_name,
+        CapitolQuery.honorific,
+        CapitolQuery.committee_name,
+        CapitolQuery.type,
+        CapitolQuery.party,
+        CapitolQuery.chamber,
+        CapitolQuery.district,
+        CapitolQuery.state_name,
+        CapitolQuery.density_quintile
+    ).limit(10)
+    print(data.statement)
+    return data
+
 def get_count(committee_name, name, party, chamber, district, state, year, quintile):
 
     data = db_session.query(Speech)\
@@ -132,7 +180,7 @@ def index():
     year = request.form.get('year')
     quintile = request.form.get('quintile')
 
-    records.update_data(get_records(committee_name, name, party, chamber, district, state, year, quintile))
+    records.update_data(get_records_one_table(committee_name, name, party, chamber, district, state, year, quintile))
     count = get_count(committee_name, name, party,chamber, district, state, year, quintile)
 
     selected = {
@@ -142,6 +190,7 @@ def index():
             "district": district,
             "state": state,
             "year": year,
+            "chamber": chamber,
             "quintile": quintile,
         }
     years = [str(x) for x in range(2018, 1997, -1)]
