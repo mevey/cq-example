@@ -56,8 +56,8 @@ function display_data(data) {
          html += "<td>"+committee_type(record[6])+"</td>" // committee type
          html += "<td>"+party(record[7])+"</td>" //party
          html += "<td>"+chamber(record[8])+"</td>" //chamber
-         html += "<td>"+record[9]+"</td>" //state
-         html += "<td>"+record[10]+"</td>" // District
+         html += "<td>"+if_null_blank(record[9])+"</td>" //state
+         html += "<td>"+if_null_blank(record[10])+"</td>" // District
          html += "<td>"+pop_density(record[11])+"</td>" //Population density
          html += "</tr>"
     }
@@ -70,27 +70,32 @@ function pop_density(val) {
     if (val == '3') return "Small City"
     if (val == '2') return "Town"
     if (val == '1') return "Rural"
-    return ""
+    return "-"
 }
 
 function chamber(val) {
     if (val == 'H') return "House"
     if (val == 'S') return "Senate"
-    return ""
+    return "-"
 }
 
 function committee_type(val) {
     if (val == 'H') return "House"
     if (val == 'S') return "Senate"
     if (val == 'J') return "Joint"
-    return ""
+    return "-"
 }
 
 function party(val) {
     if (val == 'D') return "Democrat"
     if (val == 'R') return "Republican"
     if (val == 'I') return "Independent"
-    return ""
+    return "-"
+}
+
+function if_null_blank(val) {
+    if (val) return val
+    return "-"
 }
 
 function honorific(val) {
