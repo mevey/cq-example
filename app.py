@@ -20,33 +20,7 @@ def object_as_dict(obj):
 def get_records(committee_name, name, party, chamber, district, state, year, quintile):
 
     data = db_session.query(CapitolQuery)
-
-    if committee_name:
-        data = data.filter(CapitolQuery.committee_name == committee_name.strip())
-
-    if name:
-        name = name.lower()
-        data = data.filter(CapitolQuery.full_name.like("%"+ name.strip() +"%"))
-
-    if party:
-        data = data.filter(CapitolQuery.party == party)
-
-    if chamber:
-        data = data.filter(CapitolQuery.chamber == chamber)
-
-    if year:
-        data = data.filter(CapitolQuery.year == year)
-
-    if district:
-        data = data.filter(CapitolQuery.district == district)
-
-    if state:
-        data = data.filter(CapitolQuery.state_name == state)
-
-    if quintile:
-        print("_" * 30)
-        print(quintile)
-        data = data.filter(CapitolQuery.density_quintile == int(quintile))
+    data = add_filters(data, committee_name, name, party, chamber, district, state, year, quintile)
 
     data = data.with_entities(
         CapitolQuery.honorific,
@@ -62,13 +36,10 @@ def get_records(committee_name, name, party, chamber, district, state, year, qui
         CapitolQuery.district,
         CapitolQuery.density_quintile
     ).limit(10)
-    print(data.statement)
+
     return data.all()
 
-def get_count(committee_name, name, party, chamber, district, state, year, quintile):
-
-    data = db_session.query(func.count(CapitolQuery.id))
-
+def add_filters(data, committee_name, name, party, chamber, district, state, year, quintile):
     if committee_name:
         data = data.filter(CapitolQuery.committee_name == committee_name.strip())
 
@@ -93,7 +64,13 @@ def get_count(committee_name, name, party, chamber, district, state, year, quint
 
     if quintile:
         data = data.filter(CapitolQuery.density_quintile == quintile)
-    return data.all()
+    return data
+
+def get_count(committee_name, name, party, chamber, district, state, year, quintile):
+    data = db_session.query(CapitolQuery.id)
+    data = add_filters(data, committee_name, name, party, chamber, district, state, year, quintile)
+
+    return data.count()
 
 @app.route("/")
 def index():
@@ -116,7 +93,7 @@ def records():
     e = datetime.datetime.now()
     print((e-s).total_seconds())
     s = datetime.datetime.now()
-    count = 0#get_count(committee_name, name, party,chamber, district, state, year, quintile)
+    count = get_count(committee_name, name, party,chamber, district, state, year, quintile)
     e = datetime.datetime.now()
     print((e - s).total_seconds())
 
