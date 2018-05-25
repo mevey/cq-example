@@ -37,15 +37,16 @@ function get_records(format) {
 
 function download() {
     $("#result").addClass("loading")
-    url = "/download"
-    $.ajax({
-        url: url,
-        method: "post",
-        data: $('#queryform').serialize(),
-        success: function(data) {
-            $("#result").removeClass("loading")
-        }
-    });
+    url = "/download?"
+    if ($("#speaker").val())   url += "name=" + $("#speaker").val()
+    if ($("#year").val())      url += "&year=" + $("#year").val()
+    if ($("#party").val())     url += "&party=" + $("#party").val()
+    if ($("#committee").val()) url += "&committee=" + $("#committee").val()
+    if ($("#state").val())     url += "&state=" + $("#state").val()
+    if ($("#district").val())  url += "&district=" + $("#district").val()
+    if ($("#chamber").val())   url += "&chamber=" + $("#chamber").val()
+    if ($("#quintile").val())  url += "&quintile=" + $("#quintile").val()
+    window.location.href=url
     return false;
 }
 

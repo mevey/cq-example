@@ -104,16 +104,16 @@ I Know, I know. I a mixing sqlalchemy up with raw sql. I just needed to add this
 Plus, the first rule in engineering is that the it should work!
 """
 
-@app.route('download/')
+@app.route('/download', methods=['GET', 'POST'])
 def download():
-    committee_name = request.form.get('committee',"")
-    name = request.form.get('name',"")
-    party = request.form.get('party')
-    chamber = request.form.get('chamber')
-    district = request.form.get('district')
-    state = request.form.get('state')
-    year = request.form.get('year')
-    quintile = request.form.get('quintile')
+    committee_name = request.args.get('committee',"")
+    name = request.args.get('name',"")
+    party = request.args.get('party')
+    chamber = request.args.get('chamber')
+    district = request.args.get('district')
+    state = request.args.get('state')
+    year = request.args.get('year')
+    quintile = request.args.get('quintile')
 
     connection = sqlite3.connect("cq_180410.sqlite")
     connection.row_factory = dictionary_factory
