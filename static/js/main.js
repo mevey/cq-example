@@ -16,6 +16,13 @@ $( document ).ready(function() {
     $('#filter-btn').click(function(e) {
         get_records(null);
     });
+
+    $(document).ajaxStart(function () {
+        $("#loading").show();
+    }).ajaxStop(function () {
+        $("#loading").hide();
+    });
+
 });
 
 function get_records(format) {
