@@ -1,7 +1,7 @@
 import datetime
-import os
+import os,csv, sqlite3
 
-from flask import Flask, render_template, redirect, url_for, request, jsonify
+from flask import Flask, render_template, redirect, url_for, request, jsonify, send_file
 from models import CapitolQuery
 from database import db_session
 from sqlalchemy import func, inspect
@@ -98,6 +98,105 @@ def records():
     print((e - s).total_seconds())
 
     return jsonify( records = list(records), count=count)
+
+"""
+I Know, I know. I a mixing sqlalchemy up with raw sql. I just needed to add this functionality fast.
+Plus, the first rule in engineering is that the it should work!
+"""
+
+@app.route('download/')
+def download():
+    committee_name = request.form.get('committee',"")
+    name = request.form.get('name',"")
+    party = request.form.get('party')
+    chamber = request.form.get('chamber')
+    district = request.form.get('district')
+    state = request.form.get('state')
+    year = request.form.get('year')
+    quintile = request.form.get('quintile')
+
+    connection = sqlite3.connect("cq_180410.sqlite")
+    connection.row_factory = dictionary_factory
+    cursor = connection.cursor()
+
+    # Query that gets the records that match the query
+    all_records_query = """SELECT full_name,honorific,text,hearing_title,year,committee_name,type,party,chamber,state_name,district
+        FROM capitolquery %s %s;"""
+
+    where_clause = ""
+    where_clause_arr = []
+    conditions_tuple = []
+    if name or year or party or state or committee_name or quintile or chamber or district:
+        if name:
+            where_clause_arr.append(" capitolquery.full_name like ? ")
+            conditions_tuple.append("%" + name + "%")
+        if year:
+            where_clause_arr.append(" capitolquery.year = ?")
+            conditions_tuple.append(year)
+        if party:
+            where_clause_arr.append(" capitolquery.party = ? ")
+            conditions_tuple.append(party)
+        if state:
+            where_clause_arr.append(" capitolquery.state_name = ? ")
+            conditions_tuple.append(state)
+        if chamber:
+            where_clause_arr.append(" capitolquery.chamber = ? ")
+            conditions_tuple.append(state)
+        if quintile:
+            where_clause_arr.append(" capitolquery.density_quintile = ? ")
+            conditions_tuple.append(quintile)
+        if district:
+            where_clause_arr.append(" capitolquery.district = ? ")
+            conditions_tuple.append(district)
+        if committee_name:
+            where_clause_arr.append(" capitolquery.committee_name = ? ")
+            conditions_tuple.append(committee_name)
+        where_clause = "where " + ("and".join(where_clause_arr))
+
+    limit_statement = "" #"limit 10" if format_ != "csv" else ""
+
+    all_records_query = all_records_query % (where_clause, limit_statement)
+
+    conditions_tuple = tuple(conditions_tuple)
+    cursor.execute(all_records_query, conditions_tuple)
+    records = cursor.fetchall()
+
+    connection.close()
+
+    return download_csv(records, "speeches.csv")
+
+
+
+########################################################################
+# The following are helper functions. They do not have a @app.route decorator
+########################################################################
+def dictionary_factory(cursor, row):
+    """
+    This function converts what we get back from the database to a dictionary
+    """
+    d = {}
+    for index, col in enumerate(cursor.description):
+        d[col[0]] = row[index]
+    return d
+
+
+def download_csv(data, filename):
+    """
+    Pass into this function, the data dictionary and the name of the file and it will create the csv file and send it to the view
+    """
+    header = data[0].keys()  # Data must have at least one record.
+    with open('downloads/' + filename, "w+") as f:
+        writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        writer.writerow(header)
+        for row in data:
+            writer.writerow(list(row.values()))
+
+    # Push the file to the view
+    return send_file('downloads/' + filename,
+                     mimetype='text/csv',
+                     attachment_filename=filename,
+                     as_attachment=True)
+
 
 @app.route("/about")
 def about():

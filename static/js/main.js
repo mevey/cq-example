@@ -11,7 +11,7 @@ $( document ).ready(function() {
     get_records();
 
     $('#download-btn').click(function() {
-        get_records("csv");
+        download("csv");
     });
     $('#filter-btn').click(function(e) {
         get_records(null);
@@ -29,6 +29,20 @@ function get_records(format) {
         success: function(data) {
             display_data(data.records)
             $("#speech-count").html(comma_separate(data.count) + " speeches")
+            $("#result").removeClass("loading")
+        }
+    });
+    return false;
+}
+
+function download() {
+    $("#result").addClass("loading")
+    url = "/download"
+    $.ajax({
+        url: url,
+        method: "post",
+        data: $('#queryform').serialize(),
+        success: function(data) {
             $("#result").removeClass("loading")
         }
     });
@@ -92,7 +106,7 @@ function if_null_blank(val) {
 }
 
 function honorific(val) {
-    if (!val) return ""
+    if (!val) return "-"
     return val
 }
 function title_case(str) {

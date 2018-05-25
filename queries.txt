@@ -53,3 +53,4 @@ CREATE INDEX cq_party ON capitolquery (party);
 CREATE INDEX cq_chamber ON capitolquery (chamber);
 CREATE INDEX cq_state_name ON capitolquery (state_name);
 CREATE INDEX cq_hearing_title ON capitolquery (hearing_title);
+CREATE INDEX cq_full_name ON capitolquery (full_name);
